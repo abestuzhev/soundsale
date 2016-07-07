@@ -4,8 +4,7 @@ $(document).ready(function () {
         css3: false,
         navigation: false,
     	anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
-    	menu: '#myMenu',
-    	menu: true
+    	menu: '#myMenu'
     });
 
     $('.step-button').click(function () {

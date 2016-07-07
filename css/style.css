@@ -1,11 +1,37 @@
 html {
   font-family: Arial, sans-serif; }
 
-.menu {
+ul {
+  margin: 0;
+  padding: 0; }
+
+p {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 1em;
+  line-height: 1.2em; }
+
+#myMenu {
   position: fixed;
   right: 0;
   top: 0;
-  z-index: 100; }
+  z-index: 100;
+  list-style: none;
+  text-align: right;
+  height: 100%;
+  background-color: #222424; }
+  #myMenu a {
+    display: block;
+    text-decoration: none;
+    margin: 10px 0;
+    padding: 15px;
+    color: #656565; }
+  #myMenu .active {
+    background: #666;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff; }
+    #myMenu .active a {
+      color: #fff; }
 
 .section {
   background-attachment: fixed;
