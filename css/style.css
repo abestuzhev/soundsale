@@ -1,14 +1,49 @@
+html {
+  font-family: Arial, sans-serif; }
+
+.menu {
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 100; }
+
 .section {
   background-attachment: fixed;
-  background-size: auto 80%;
-  background-position: 50% 0%;
+  background-position: 50% 50%;
   background-repeat: no-repeat; }
 
+.step {
+  width: 100%;
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  height: 61px; }
+  .step-button {
+    width: 80px;
+    height: 61px;
+    margin: 0 auto;
+    padding-top: 10px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    cursor: pointer; }
+    .step-button_name {
+      font-size: 18px;
+      line-height: 20px;
+      text-align: center;
+      color: #fff; }
+  .step-orange {
+    background-image: url("../img/step.png"); }
+  .step-darkblue {
+    background-image: url("../img/step-2.png"); }
+
 #section1 {
-  background-image: url("../img/h2.gif"); }
+  background-image: url("../img/slide-1.jpg"); }
 
 #section2 {
   background-image: url("../img/slide-2.jpg"); }
 
 #section3 {
   background-image: url("../img/slide-3.jpg"); }
+
+.pp-easing {
+  transition-timing-function: cubic-bezier(0.55, 0.085, 0, 0.99); }
