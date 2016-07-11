@@ -4,7 +4,9 @@ $(document).ready(function () {
         css3: false,
         navigation: false,
     	anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
-    	menu: '#myMenu'
+    	menu: '#myMenu',
+    	scrollingSpeed: 500,
+    	easing: 'swing'
     });
 
     $('.step-button').click(function () {

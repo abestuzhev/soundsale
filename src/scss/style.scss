@@ -50,6 +50,7 @@ p {
     background-position: 50% 50%;
     background-repeat: no-repeat;
     // background-color: #cc1;
+    transition-timing-function: cubic-bezier(.14,1.15,.94,.65);
 }
 
 .step {
@@ -99,9 +100,9 @@ p {
 
 
 //animation
-.pp-easing {
-   transition-timing-function: cubic-bezier(0.550, 0.085, 0.000, 0.990);
-}
+// .pp-easing {
+//    transition-timing-function: cubic-bezier(0.550, 0.085, 0.000, 0.990);
+// }
 
 #pp-nav {
 	// display: none;
