@@ -1,9 +1,9 @@
-html {
-  font-family: Arial, sans-serif; }
-
 ul {
   margin: 0;
   padding: 0; }
+
+html {
+  font-family: Arial, sans-serif; }
 
 p {
   margin: 0;
@@ -15,23 +15,61 @@ p {
   position: fixed;
   right: 0;
   top: 0;
+  width: 50px;
   z-index: 100;
   list-style: none;
-  text-align: right;
+  text-align: left;
   height: 100%;
   background-color: #222424; }
+  #myMenu li {
+    border-top: 1px solid #434343;
+    border-bottom: 1px solid #434343;
+    position: relative; }
+  #myMenu .menu-logo {
+    margin: 3px 3px 17px 0;
+    text-align: right; }
   #myMenu a {
-    display: block;
+    display: table;
     text-decoration: none;
-    margin: 10px 0;
-    padding: 15px;
+    margin-left: 15px;
+    height: 42px;
+    vertical-align: middle;
     color: #656565; }
   #myMenu .active {
     background: #666;
     background: rgba(0, 0, 0, 0.5);
     color: #fff; }
     #myMenu .active a {
-      color: #fff; }
+      color: #b2b2b2; }
+  #myMenu .menu-title {
+    display: none; }
+  #myMenu .menu-icon {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    margin-top: -10px;
+    width: 21px;
+    height: 20px;
+    text-align: center; }
+  #myMenu .menu-icon-1,
+  #myMenu .menu-icon-2,
+  #myMenu .menu-icon-3,
+  #myMenu .menu-icon-4 {
+    background-repeat: no-repeat;
+    background-position: 50% 50%; }
+  #myMenu .menu-icon-1 {
+    background-image: url("../../img/menu-icon-1.png"); }
+  #myMenu .menu-icon-2 {
+    background-image: url("../../img/menu-icon-2.png"); }
+  #myMenu .menu-icon-3 {
+    background-image: url("../../img/menu-icon-3.png"); }
+  #myMenu .menu-icon-4 {
+    background-image: url("../../img/menu-icon-4.png"); }
+  #myMenu.menu-open {
+    width: 205px; }
+  #myMenu.menu-open .menu-title {
+    display: table-cell;
+    vertical-align: middle; }
 
 .section {
   background-attachment: fixed;
@@ -71,3 +109,6 @@ p {
 
 #section3 {
   background-image: url("../img/slide-3.jpg"); }
+
+#section4 {
+  background-image: url("../img/slide-4.jpg"); }

@@ -13,4 +13,8 @@ $(document).ready(function () {
     $.fn.pagepiling.moveSectionDown();
 	});
 
+    $("#myMenu").hover(function() {
+    	$("#container").toggleClass('menu-push-toright');
+    	$("#myMenu").toggleClass('menu-open');
+	});
 });

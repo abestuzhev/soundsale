@@ -5,6 +5,7 @@
     <title>Sound Sale</title>
     <link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
     <link rel="stylesheet" href="bower_components/pagePiling.js/jquery.pagepiling.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -13,10 +14,31 @@
   <!-- http://www.onextrapixel.com/2015/04/09/how-to-create-a-beautiful-fullscreen-single-scrolling-page-like-huge-inc/ -->
 
 <ul id="myMenu">
-    <li data-menuanchor="firstPage" class="active"><a href="#firstPage">First section</a></li>
-    <li data-menuanchor="secondPage" class=""><a href="#secondPage">Second section</a></li>
-    <li data-menuanchor="thirdPage" class=""><a href="#thirdPage">Third section</a></li>
-    <li data-menuanchor="fourthPage" class=""><a href="#fourthPage">Fourth section</a></li>
+	<div class="menu-logo"><img src="img/logo-menu.png" alt=""></div>
+    <li data-menuanchor="firstPage" class="active">
+    	<a href="#firstPage">
+	    	<span class="menu-title">Сценарий</span>
+	    	<i class="menu-icon menu-icon-1"></i>
+	    </a>
+    </li>
+    <li data-menuanchor="secondPage" class="">
+    	<a href="#secondPage">
+    		<span class="menu-title">Вид продукции</span>
+    		<i class="menu-icon menu-icon-2"></i>
+    	</a>
+    </li>
+    <li data-menuanchor="thirdPage" class="">
+    	<a href="#thirdPage">
+    		<span class="menu-title">Тип ролика</span>
+    		<i class="menu-icon menu-icon-3"></i>
+    	</a>
+    </li>
+    <li data-menuanchor="fourthPage" class="">
+    	<a href="#fourthPage">
+	    	<span class="menu-title">Хронометраж</span>
+	    	<i class="menu-icon menu-icon-4"></i>
+    	</a>
+    </li>
 </ul>
 
   <div id="pagepiling">
@@ -44,6 +66,14 @@
   			</div>
   		</div>
 	</div>
+	<div class="section" id="section4">
+		<div class="step">
+  			<div class="step-button step-orange">
+  			  <div class="step-button_name">Шаг</div>
+  			  <div class="step-button_name">4</div>
+  			</div>
+  		</div>
+	</div>
   </div>
 
 	<script src="bower_components/jquery/dist/jquery.js"></script>
@@ -52,3 +82,4 @@
 	<script src="src/js/main.js"></script>
   </body>
 </html>
+
