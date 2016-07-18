@@ -10,6 +10,18 @@
 	text-align: left;
 	height: 100%;
 	background-color: #222424;
+  transition: all .2s ease-out;
+
+  &:hover {
+    width: 205px;
+    transition: all .2s ease-out;
+  }
+
+  &:hover .menu-title {
+    // display: inline-block;
+  display: table-cell;
+  vertical-align: middle
+  }
 
   li {
     border-top: 1px solid $color-lite-gray;
@@ -42,6 +54,8 @@
 	}
   .menu-title {
     display: none;
+
+  transition: all .5s ease-out;
   }
 
   
@@ -161,3 +175,51 @@
 #pp-nav {
 	// display: none;
 }
+
+.radio {
+  position: absolute;
+  top:40%;
+  left:21%;
+}
+
+label {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  padding-left: 62px;
+  font: 600 18px/1.2 $font-text;
+  vertical-align: middle;
+  color: #fff;
+}
+
+input[type=radio] {
+  display: none;
+}
+
+
+label::before {
+  content: "";
+  display: inline-block;
+
+  width: 47px;
+  height: 42px;
+
+  margin-right: 10px;
+  background-color: #fff;
+  box-shadow: 0px 1px 2px 0px rgba(68, 32, 4, 0.15);
+  vertical-align: middle;
+}
+
+.radio label:before {
+  border-radius: 42%;
+}
+
+input[type=radio]:checked + label:before {
+    // content: "\2022";
+    color: #000;
+    // background-image: url('../../img/check.png');
+    font-size: 130px;
+    text-align: center;
+    line-height: 18px;
+}
+

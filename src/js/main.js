@@ -14,7 +14,7 @@ $(document).ready(function () {
 	});
 
     $("#myMenu").hover(function() {
-    	$("#container").toggleClass('menu-push-toright');
-    	$("#myMenu").toggleClass('menu-open');
+    	// $("#container").toggleClass('menu-push-toright');
+    	// $("#myMenu").toggleClass('menu-open');
 	});
 });
