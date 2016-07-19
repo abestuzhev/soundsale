@@ -124,7 +124,21 @@ input[type=radio] {
   background-image: url("../img/slide-1.jpg"); }
 
 #section2 {
-  background-image: url("../img/slide-2.jpg"); }
+  background-color: #f6652e; }
+  #section2 label {
+    margin-right: 95px; }
+  #section2 label:last-child {
+    margin: 0; }
+
+.slide-icon-2 {
+  position: absolute;
+  top: 16%;
+  left: 50%;
+  margin-left: -298px; }
+
+.slide-title-scenario {
+  position: relative;
+  top: 43%; }
 
 #section3 {
   background-image: url("../img/slide-3.jpg"); }
@@ -132,22 +146,31 @@ input[type=radio] {
 #section4 {
   background-image: url("../img/slide-4.jpg"); }
 
+.section_wrap {
+  width: 960px;
+  height: 100%;
+  margin: 0 auto;
+  outline: 1px solid #000; }
+
 .radio {
   position: absolute;
   top: 60%;
   left: 50%;
   margin-left: -283px; }
 
+.slide-title {
+  font: bold 60px/1.2 "Open Sans", sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center; }
+
 label {
   display: inline-block;
   cursor: pointer;
-  margin-right: 95px;
   font: 600 18px/1.2 "Open Sans", sans-serif;
   vertical-align: middle;
   color: #fff;
   padding: 0; }
-  label:last-child {
-    margin: 0; }
 
 input[type=radio] {
   display: none; }
