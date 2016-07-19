@@ -58,7 +58,7 @@
   transition: all .5s ease-out;
   }
 
-  
+
 
   .menu-icon {
     position: absolute;
@@ -81,15 +81,15 @@
 
   .menu-icon-1 {
     background-image: url('../../img/menu-icon-1.png');
-  } 
+  }
 
   .menu-icon-2 {
     background-image: url('../../img/menu-icon-2.png');
-  }   
+  }
 
   .menu-icon-3 {
     background-image: url('../../img/menu-icon-3.png');
-  }  
+  }
 
   .menu-icon-4 {
     background-image: url('../../img/menu-icon-4.png');
@@ -106,7 +106,7 @@
   }
 
 }
-  
+
 
 .section {
 	background-attachment: fixed;
@@ -176,50 +176,53 @@
 	// display: none;
 }
 
+//radio
+
 .radio {
   position: absolute;
-  top:40%;
-  left:21%;
+  top: 60%;
+  left: 50%;
+	margin-left: -283px;
 }
 
 label {
   display: inline-block;
   cursor: pointer;
-  position: relative;
-  padding-left: 62px;
+	margin-right: 95px;
   font: 600 18px/1.2 $font-text;
   vertical-align: middle;
   color: #fff;
+	padding: 0;
+
+	&:last-child {
+		margin: 0;
+	}
 }
 
 input[type=radio] {
   display: none;
 }
 
-
 label::before {
   content: "";
   display: inline-block;
-
+  position: relative;
   width: 47px;
   height: 42px;
-
-  margin-right: 10px;
+  margin-right: 15px;
   background-color: #fff;
   box-shadow: 0px 1px 2px 0px rgba(68, 32, 4, 0.15);
   vertical-align: middle;
+	border-radius: 42%;
 }
 
-.radio label:before {
-  border-radius: 42%;
-}
-
-input[type=radio]:checked + label:before {
-    // content: "\2022";
+input[type=radio]:checked + label:after {
+    content: "";
+		width: 27px;
+		height: 24px;
+		position: absolute;
+		top: 10px;
+		left: 10px;
     color: #000;
-    // background-image: url('../../img/check.png');
-    font-size: 130px;
-    text-align: center;
-    line-height: 18px;
+    background: url('../../img/check.png') no-repeat 50% 50%;
 }
-
