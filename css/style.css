@@ -77,13 +77,13 @@ input[type=radio] {
     background-repeat: no-repeat;
     background-position: 50% 50%; }
   #myMenu .menu-icon-1 {
-    background-image: url("../../img/menu-icon-1.png"); }
+    background-image: url("../img/menu-icon-1.png"); }
   #myMenu .menu-icon-2 {
-    background-image: url("../../img/menu-icon-2.png"); }
+    background-image: url("../img/menu-icon-2.png"); }
   #myMenu .menu-icon-3 {
-    background-image: url("../../img/menu-icon-3.png"); }
+    background-image: url("../img/menu-icon-3.png"); }
   #myMenu .menu-icon-4 {
-    background-image: url("../../img/menu-icon-4.png"); }
+    background-image: url("../img/menu-icon-4.png"); }
   #myMenu.menu-open {
     width: 205px; }
   #myMenu.menu-open .menu-title {
@@ -158,7 +158,6 @@ input[type=radio] {
 .product-left,
 .product-right {
   box-sizing: border-box;
-  outline: 1px solid #000;
   width: 50%;
   margin-top: 47%; }
 
@@ -175,8 +174,7 @@ input[type=radio] {
 .section-wrap {
   width: 960px;
   height: 100%;
-  margin: 0 auto;
-  outline: 1px solid #000; }
+  margin: 0 auto; }
   .section-wrap::after {
     content: '';
     display: table;
@@ -226,4 +224,4 @@ input[type=radio]:checked + label:after {
   top: 10px;
   left: 10px;
   color: #000;
-  background: url("../../img/check.png") no-repeat 50% 50%; }
+  background: url("../img/check.png") no-repeat 50% 50%; }
