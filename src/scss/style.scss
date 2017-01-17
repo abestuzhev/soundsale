@@ -18,7 +18,7 @@
   }
 
   &:hover .menu-title {
-  display: table-cell;
+  //display: block;
   vertical-align: middle
   }
 
@@ -37,8 +37,8 @@
 	display: table;
 	text-decoration: none;
 	margin-left: 15px;
-  height: 42px;
-  vertical-align: middle;
+    height: 42px;
+    vertical-align: middle;
 	color: #656565;
 	}
 
@@ -53,8 +53,8 @@
 	}
   .menu-title {
     display: none;
-
-  transition: all .5s ease-out;
+    padding-top: 14px;
+    //transition: all .5s ease-out;
   }
 
   .menu-icon {

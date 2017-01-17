@@ -11,17 +11,6 @@ p {
   font-size: 1em;
   line-height: 1.2em; }
 
-label {
-  display: inline-block;
-  cursor: pointer;
-  position: relative;
-  padding-left: 25px;
-  margin-right: 15px;
-  font-size: 13px; }
-
-input[type=radio] {
-  display: none; }
-
 #myMenu {
   position: fixed;
   right: 0;
@@ -37,7 +26,6 @@ input[type=radio] {
     width: 205px;
     transition: all .2s ease-out; }
   #myMenu:hover .menu-title {
-    display: table-cell;
     vertical-align: middle; }
   #myMenu li {
     border-top: 1px solid #434343;
@@ -61,7 +49,7 @@ input[type=radio] {
       color: #b2b2b2; }
   #myMenu .menu-title {
     display: none;
-    transition: all .5s ease-out; }
+    padding-top: 14px; }
   #myMenu .menu-icon {
     position: absolute;
     top: 50%;
