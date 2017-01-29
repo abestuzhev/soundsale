@@ -1,0 +1,104 @@
+
+.vertical-menu_item {
+  display: block;
+  /*margin: 10px;*/
+  color: #000;
+  border-top: 1px solid #434343;
+  border-bottom: 1px solid #434343;
+  padding: 12px 14px;
+
+
+}
+
+.vertical-menu_item.active{
+  background:#666;
+  background: rgba(0,0,0, 0.5);
+  color: #fff;
+}
+
+.vertical-menu_link {
+  text-decoration:none;
+  color: #000;
+  text-align: center;
+  display: block;
+  width: 24px;
+  height: 21px;
+  overflow: hidden;
+  transition: all .2s ease-out;
+}
+
+.vertical-menu_item:hover .vertical-menu_link{
+  background-position: -24px 0;
+  transition: all .2s ease-out;
+}
+
+.vertical-menu_item.active a:hover{
+  color: #000;
+  background-position: -24px 0;
+  transition: all .2s ease-out;
+}
+
+.vertical-menu_item:hover{
+  background-color: #111313;
+}
+
+.vertical-menu_link,
+.vertical-menu_item.active .vertical-menu_link {
+  display:block;
+}
+
+.vertical-menu_item.active .vertical-menu_link {
+  color: #fff;
+}
+
+.vertical-nav {
+  position:fixed;
+  top:0;
+  right:0;
+  height: 100%;
+  z-index: 70;
+  padding: 0;
+  margin:0;
+  background-color: #222424;
+}
+
+//vertical-nav
+.icon-scenario {
+  background-image: url($img-dir + 'icon-scenario.png');
+}
+
+.icon-view {
+  background-image: url($img-dir + 'icon-view.png');
+}
+
+.icon-headphones {
+  background-image: url($img-dir + 'icon-headphones.png');
+}
+
+.icon-chronometry {
+  background-image: url($img-dir + 'icon-chronometry.png');
+}
+
+.icon-style {
+  background-image: url($img-dir + 'icon-style.png');
+}
+
+.icon-accompaniment {
+  background-image: url($img-dir + 'icon-accompaniment.png');
+}
+
+.icon-accent {
+  background-image: url($img-dir + 'icon-accent.png');
+}
+
+.icon-data {
+  background-image: url($img-dir + 'icon-data.png');
+}
+
+.icon-law {
+  background-image: url($img-dir + 'icon-law.png');
+}
+
+.icon-info {
+  background-image: url($img-dir + 'icon-info.png');
+}
