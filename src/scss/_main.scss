@@ -1,7 +1,7 @@
 #section0 {
-  //background: url($img-dir + 'slide-3.jpg') 0 0 no-repeat;
-  //-webkit-background-size: cover;
-  //background-size: cover;
+  background: url($img-dir + 'slide-bg-3.jpg') 0 0 no-repeat;
+  -webkit-background-size: cover;
+  background-size:  cover;
 }
 
 #section1 {
@@ -65,9 +65,6 @@
 
 //slide-view
 .slide-view {
-  background: url($img-dir + 'slide-bg-3.jpg') 0 0 no-repeat;
-  -webkit-background-size: cover;
-  background-size:  cover;
 
   .grid_item {
     width: 50%;
