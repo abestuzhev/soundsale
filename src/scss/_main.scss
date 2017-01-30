@@ -5,9 +5,9 @@
 }
 
 #section1 {
-  background: url($img-dir + 'slide-4.jpg') 0 0 no-repeat;
+  background: url($img-dir + 'slide-bg-4.jpg') 0 0 no-repeat;
   -webkit-background-size: cover;
-  background-size: cover;
+  background-size:  cover;
 }
 
 #section2 {
@@ -63,15 +63,20 @@
   text-align: center;
 }
 
+.section_img {
+  text-align: center;
+}
 //slide-view
 .slide-view {
 
   .grid_item {
     width: 50%;
-    outline: 1px solid #ccc;
+    //outline: 1px solid #ccc;
   }
   .section_title {
     text-shadow: 0.5px 0.9px 3px rgba(68, 32, 4, 0.25);
     margin-bottom: 28px;
   }
 }
+
+
