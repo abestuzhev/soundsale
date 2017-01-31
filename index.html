@@ -63,7 +63,7 @@
           <div class="section_img"><img src="img/slide-icon-3.png" alt=""></div>
           <h2 class="section_title">Вид продукции</h2>
           <div class="grid">
-            <div class="grid_item">
+            <div class="grid_column">
 
               <input type="radio" id="radiospot" name="view" checked="checked">
               <label for="radiospot">Радиоролик</label>
@@ -76,7 +76,7 @@
 
             </div>
 
-            <div class="grid_item">
+            <div class="grid_column">
               <input type="radio" id="videospot" name="view">
               <label for="videospot">Звуковой трэк для видео ролика</label>
 
@@ -108,13 +108,13 @@
         <div class="section_img"><img src="img/slide-icon-4-1.png" alt=""></div>
         <h2 class="section_title">Тип ролика</h2>
         <div class="grid">
-          <div class="grid_item">
+          <div class="grid_column">
             <input type="radio" id="type-information" name="headphones" checked="checked">
             <label for="type-information">Информационный</label>
 
           </div>
 
-          <div class="grid_item">
+          <div class="grid_column">
             <input type="radio" id="type-gamers" name="headphones">
             <label for="type-gamers">Игровой</label>
 
@@ -144,31 +144,31 @@
         <div class="section_img"><img src="img/slide-icon-chronometry.png" alt=""></div>
         <h2 class="section_title">Хронометраж</h2>
         <div class="grid">
-          <div class="grid_item">
+          <div class="grid_column">
             <input type="radio" id="chronometry-5" name="chronometry" checked="checked">
             <label for="chronometry-5">5</label>
           </div>
-          <div class="grid_item">
+          <div class="grid_column">
             <input type="radio" id="chronometry-10" name="chronometry">
             <label for="chronometry-10">10</label>
           </div>
-          <div class="grid_item">
+          <div class="grid_column">
             <input type="radio" id="chronometry-15" name="chronometry">
             <label for="chronometry-15">15</label>
           </div>
-          <div class="grid_item">
+          <div class="grid_column">
             <input type="radio" id="chronometry-20" name="chronometry">
             <label for="chronometry-20">20</label>
           </div>
-          <div class="grid_item">
+          <div class="grid_column">
             <input type="radio" id="chronometry-30" name="chronometry">
             <label for="chronometry-30">30</label>
           </div>
-          <div class="grid_item">
+          <div class="grid_column">
             <input type="radio" id="chronometry-35" name="chronometry">
             <label for="chronometry-35">35</label>
           </div>
-          <div class="grid_item">
+          <div class="grid_column">
             <input type="text" name="other" placeholder="другой">
           </div>
         </div><!--end grid-->
@@ -190,12 +190,131 @@
   </div><!--section end-->
 
   <div class="section" id="section3">
-
   </div><!--section end-->
 
   <div class="section" id="section4">
+    <div class="container-layout">
+      <div class="slide-incidental">
+        <div class="section_img"><img src="img/slide-icon-incidental.png" alt=""></div>
+        <h2 class="section_title">Музыкальное сопровождение</h2>
+        <div class="grid grid--full">
+          <div class="grid_column">
+            <input type="radio" id="incidental-auto" name="incidental" checked="checked">
+            <label for="incidental-auto">Довериться специалистам</label>
+          </div>
+        </div><!--end grid-->
 
+        <h3 class="section_subtitle">Свой выбор</h3>
+        <div class="grid">
+          <div class="grid_column">
+            <h4 class="section_small-title">Музыкальное направление:</h4>
+            <div class="grid_item">
+              <input type="checkbox" id="rap" name="musical-direction" checked="checked">
+              <label for="rap">Рэп</label>
+            </div>
+            <div class="grid_item">
+              <input type="checkbox" id="rock" name="musical-direction">
+              <label for="rock">Рок</label>
+            </div>
+            <div class="grid_item">
+              <input type="checkbox" id="pop" name="musical-direction">
+              <label for="pop">Поп</label>
+            </div>
+            <div class="grid_item">
+              <input type="checkbox" id="electro" name="musical-direction">
+              <label for="electro">Электронная</label>
+            </div>
+            <div class="grid_item">
+              <input type="checkbox" id="dub-step" name="musical-direction">
+              <label for="dub-step">Даб-Степ</label>
+            </div>
+            <div class="grid_item">
+              <input type="checkbox" id="stage" name="musical-direction" checked="checked">
+              <label for="stage">Эстрада</label>
+            </div>
+            <div class="grid_item">
+              <input type="checkbox" id="information" name="musical-direction">
+              <label for="information">Информационная</label>
+            </div>
+            <div class="grid_item">
+              <input type="checkbox" id="image" name="musical-direction">
+              <label for="image">Имиджевая</label>
+            </div>
+            <div class="grid_item">
+              <input type="checkbox" id="jazz" name="musical-direction">
+              <label for="jazz">Джаз</label>
+            </div>
+            <div class="grid_item">
+              <input type="checkbox" id="folk" name="musical-direction">
+              <label for="folk">Фолк</label>
+            </div>
+            <div class="grid_item">
+              <input type="checkbox" id="blues" name="musical-direction">
+              <label for="blues">Блюз</label>
+            </div>
+          </div><!--end grid-column-->
+
+          <div class="grid_column">
+            <h4 class="section_small-title">Темп музыки:</h4>
+            <div class="grid_item">
+              <input type="checkbox" id="fast" name="tempo" checked="checked">
+              <label for="fast">Быстрый</label>
+            </div>
+            <div class="grid_item">
+              <input type="checkbox" id="middle" name="tempo">
+              <label for="middle">Средний</label>
+            </div>
+            <div class="grid_item">
+              <input type="checkbox" id="slow" name="tempo">
+              <label for="slow">Медленный</label>
+            </div>
+            <div class="grid_item">
+              <input type="checkbox" id="melodic" name="tempo">
+              <label for="melodic">Мелодичный</label>
+            </div>
+            <div class="grid_item">
+              <input type="checkbox" id="romantic" name="tempo">
+              <label for="romantic">Романтичный</label>
+            </div>
+            <div class="grid_item">
+              <input type="checkbox" id="neutral" name="tempo">
+              <label for="neutral">Нейтральный</label>
+            </div>
+            <div class="grid_item">
+              <input type="checkbox" id="circus" name="tempo">
+              <label for="circus">Цирковая</label>
+            </div>
+            <div class="grid_item">
+              <input type="checkbox" id="sports" name="tempo">
+              <label for="sports">Спортивная</label>
+            </div>
+            <div class="grid_item">
+              <input type="checkbox" id="glamorous" name="tempo">
+              <label for="glamorous">Гламурная</label>
+            </div>
+          </div><!--end grid-column-->
+
+        </div><!--end grid-->
+
+
+
+      </div><!--end slide-chronometry-->
+    </div><!--end container-layout-->
+
+    <div class="c-arrow-down">
+      <div class="c-arrow-down_text">Шаг</div>
+      <div class="c-arrow-down_number">5</div>
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+         viewBox="0 0 80 61" enable-background="new 0 0 80 61" xml:space="preserve">
+        <g fill="#0a556d">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M13,0h55v37H13V0z"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M40,37H0l40,24V37z"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M40,37h40L40,61V37z"/>
+        </g>
+        </svg>
+    </div>
   </div><!--section end-->
+
 
   <div class="section" id="section5">
 

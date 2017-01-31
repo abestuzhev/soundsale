@@ -30,6 +30,8 @@ p {
 //grid
 .grid {
   font-size: 0;
+  position: relative;
+  z-index: 999;
 
   &::after {
     content: "";
@@ -37,11 +39,15 @@ p {
     width: 100%;
   }
 
-  &_item {
+  &_column {
     display: inline-block;
     padding: 0 10px;
     vertical-align: top;
     text-align: left;
+  }
+
+  &_item {
+    display: block;
   }
 }
 ///end grid
@@ -67,10 +73,10 @@ p {
   }
 }
 
-img {
-  width: 100%;
-  height: auto;
-}
+//img {
+//  width: 100%;
+//  height: auto;
+//}
 
 
 //radio
@@ -84,6 +90,7 @@ img {
 
 .slide-title {
   position: relative;
+  z-index: 999;
   font: bold 60px/1.2 $font-text;
   text-transform: uppercase;
   color: #fff;
@@ -101,7 +108,8 @@ label {
 
 }
 
-input[type=radio] {
+input[type=radio],
+input[type=checkbox] {
   display: none;
 }
 
@@ -119,7 +127,8 @@ label::before {
   margin-bottom: 10px;
 }
 
-input[type=radio]:checked + label:after {
+input[type=radio]:checked + label:after,
+input[type=checkbox]:checked + label:after {
   content: "";
   width: 27px;
   height: 24px;
@@ -127,7 +136,7 @@ input[type=radio]:checked + label:after {
   top: 10px;
   left: 10px;
   color: #000;
-  background: url('../img/check.png') no-repeat 50% 50%;
+  background: url($img-dir + 'check.png') no-repeat 50% 50%;
 }
 
 input[type=text] {
