@@ -9,4 +9,25 @@
   bottom: 50px;
   left: 50%;
   margin-left: -40px;
+  cursor: pointer;
+
+  &_text,
+  &_number {
+    position: absolute;
+    text-align: center;
+    color: #FFF;
+    font-family: "Open Sans";
+    font-size: 13px;
+    font-weight: 400;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &_text {
+    top: 12px;
+  }
+
+  &_number {
+    top: 30px;
+  }
 }

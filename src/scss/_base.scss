@@ -67,6 +67,11 @@ p {
   }
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
+
 
 //radio
 
@@ -125,4 +130,17 @@ input[type=radio]:checked + label:after {
   background: url('../img/check.png') no-repeat 50% 50%;
 }
 
+input[type=text] {
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  background-color: #fff;
+  color: #1C3344;
+  //font-family: "Open Sans";
+  font-size: 16px;
+  padding: 13px 22px 13px;
+}
 
+input[placeholder] {
+  color: #1C3344;
+}

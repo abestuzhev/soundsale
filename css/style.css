@@ -45,6 +45,10 @@ p {
     height: 100%;
     width: 100%; }
 
+img {
+  width: 100%;
+  height: auto; }
+
 .radio {
   position: absolute;
   top: 60%;
@@ -93,13 +97,41 @@ input[type=radio]:checked + label:after {
   color: #000;
   background: url("../img/check.png") no-repeat 50% 50%; }
 
+input[type=text] {
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  background-color: #fff;
+  color: #1C3344;
+  font-size: 16px;
+  padding: 13px 22px 13px; }
+
+input[placeholder] {
+  color: #1C3344; }
+
 .c-arrow-down {
   width: 80px;
   height: 61px;
   position: absolute;
   bottom: 50px;
   left: 50%;
-  margin-left: -40px; }
+  margin-left: -40px;
+  cursor: pointer; }
+  .c-arrow-down_text, .c-arrow-down_number {
+    position: absolute;
+    text-align: center;
+    color: #FFF;
+    font-family: "Open Sans";
+    font-size: 13px;
+    font-weight: 400;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%); }
+  .c-arrow-down_text {
+    top: 12px; }
+  .c-arrow-down_number {
+    top: 30px; }
 
 .vertical-menu_item {
   display: block;
@@ -192,7 +224,7 @@ input[type=radio]:checked + label:after {
   background-size: cover; }
 
 #section2 {
-  background: url("../img/slide-5.jpg") 0 0 no-repeat;
+  background: url("../img/slide-bg-chronometry.jpg") 0 0 no-repeat;
   background-size: cover; }
 
 #section3 {
@@ -225,7 +257,9 @@ input[type=radio]:checked + label:after {
   font-size: 60px;
   font-weight: 700;
   text-transform: uppercase;
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 28px;
+  text-shadow: 0.5px 0.9px 3px rgba(68, 32, 4, 0.25); }
 
 .section_img {
   text-align: center; }
@@ -233,6 +267,30 @@ input[type=radio]:checked + label:after {
 .slide-view .grid_item {
   width: 50%; }
 
-.slide-view .section_title {
-  text-shadow: 0.5px 0.9px 3px rgba(68, 32, 4, 0.25);
-  margin-bottom: 28px; }
+.slide-headphones .grid_item {
+  width: 50%; }
+  .slide-headphones .grid_item:first-child {
+    text-align: center; }
+
+.slide-chronometry {
+  position: relative; }
+  .slide-chronometry .grid {
+    padding: 0 80px;
+    text-align: justify; }
+    .slide-chronometry .grid::after {
+      content: '';
+      width: 100%;
+      display: inline-block;
+      font-size: 0; }
+  .slide-chronometry .grid_item {
+    width: auto; }
+  .slide-chronometry .section_title {
+    position: absolute;
+    top: 3.2em;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%); }
+  .slide-chronometry input[type=text] {
+    width: 120px;
+    font-weight: 700; }
