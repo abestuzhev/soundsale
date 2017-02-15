@@ -116,7 +116,7 @@ input[placeholder] {
   width: 80px;
   height: 61px;
   position: absolute;
-  bottom: 50px;
+  bottom: 20px;
   left: 50%;
   margin-left: -40px;
   cursor: pointer; }
@@ -135,6 +135,20 @@ input[placeholder] {
     top: 12px; }
   .c-arrow-down_number {
     top: 30px; }
+
+.btn-price {
+  cursor: pointer;
+  color: #FFF;
+  font-family: "Tahoma";
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 31px auto 56px;
+  padding: 26px 28px;
+  border-radius: 50px;
+  outline: none;
+  border: none;
+  background-color: #F2491B; }
 
 .vertical-menu_item {
   display: block;
@@ -179,7 +193,7 @@ input[placeholder] {
   color: #fff; }
 
 .vertical-nav {
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
   height: 100%;
@@ -218,57 +232,79 @@ input[placeholder] {
 .icon-info {
   background-image: url("../img/icon-info.png"); }
 
-#section0 {
+.horizontal-nav .horizontal-logo {
+  display: inline-block; }
+
+.horizontal-nav .horizontal-menu_item {
+  display: inline-block; }
+
+.horizontal-nav .horizontal-menu_link {
+  color: #282828;
+  font-family: "Open Sans";
+  font-size: .875em;
+  padding: 24px 12px; }
+
+.section-scenario {
+  background-color: #f6652e; }
+  .section-scenario .slide-scenario {
+    padding: 0 180px; }
+  .section-scenario .grid_column {
+    width: 50%; }
+    .section-scenario .grid_column:last-child {
+      text-align: right; }
+
+.section-view {
+  position: relative;
   background: url("../img/slide-bg-3.jpg") 0 0 no-repeat;
   background-size: cover; }
 
-#section1 {
+.section-type {
   background: url("../img/slide-bg-4.jpg") 0 0 no-repeat;
   background-size: cover; }
 
-#section2 {
+.section-chronometry {
   background: url("../img/slide-bg-chronometry.jpg") 0 0 no-repeat;
   background-size: cover; }
 
-#section3 {
+.section-form-style {
   background: url("../img/slide-6.jpg") 0 0 no-repeat;
   background-size: cover; }
 
-#section4 {
+.section-incidental {
   background: url("../img/slide-bg-incidental.jpg") 0 0 no-repeat;
   background-size: cover; }
 
-#section5 {
+#section7 {
   background: url("../img/slide-8.jpg") 0 0 no-repeat;
   background-size: cover; }
 
-#section6 {
+.section-output {
   background: url("../img/output-bg.jpg") 0 0 no-repeat;
   background-size: cover; }
-  #section6 .c-arrow-down {
+  .section-output .c-arrow-down {
     color: #000; }
-  #section6 .section_img {
+  .section-output .section_img {
     margin-bottom: 36px; }
 
-#section7 {
+.section-law {
   background: url("../img/law-bg.jpg") 0 0 no-repeat;
   background-size: cover;
   text-align: left; }
-  #section7 .section_img {
+  .section-law .section_img {
     margin-bottom: 18px; }
-  #section7 .section_title {
+  .section-law .section_title {
     font-size: 3.125em; }
-  #section7 label {
+  .section-law label {
     display: block; }
-  #section7 .grid_column:first-child {
+  .section-law .grid_column:first-child {
     margin-left: 52px;
     width: 29%; }
-  #section7 .grid_column:last-child {
+  .section-law .grid_column:last-child {
     width: 65%; }
 
-#section8 {
+.section-information {
   background-color: #efefee; }
-  #section8 .section_title {
+  .section-information .section_title {
     color: #1C3344;
     font-size: 3.125em;
     font-weight: 700;
@@ -305,13 +341,15 @@ input[placeholder] {
   text-align: center;
   position: relative;
   z-index: 10; }
+  .section_img img {
+    vertical-align: middle; }
 
 .slide-view .grid_column {
   width: 50%; }
 
-.slide-headphones .grid_column {
+.slide-type .grid_column {
   width: 50%; }
-  .slide-headphones .grid_column:first-child {
+  .slide-type .grid_column:first-child {
     text-align: center; }
 
 .slide-chronometry {
@@ -342,7 +380,7 @@ input[placeholder] {
 
 .slide-incidental .section_img {
   position: absolute;
-  top: 0;
+  top: -180px;
   right: 0; }
 
 .slide-incidental .grid,
@@ -353,7 +391,10 @@ input[placeholder] {
   width: 100%; }
 
 .slide-incidental .grid_column {
-  width: 33%; }
+  width: 30%; }
+
+.slide-incidental .grid_column:last-child {
+  width: 40%; }
 
 .output {
   padding: 0 137px 0 141px; }
@@ -453,16 +494,7 @@ input[placeholder] {
     left: 0;
     background: url("../img/icon-advertising-law.png") no-repeat 50% 50%; }
 
-.btn-price {
-  cursor: pointer;
-  color: #FFF;
-  font-family: "Tahoma";
-  font-size: 20px;
-  font-weight: 400;
-  text-transform: uppercase;
-  margin: 31px auto 56px;
-  padding: 33px 28px;
-  border-radius: 50px;
-  outline: none;
-  border: none;
-  background-color: #F2491B; }
+.section-item {
+  height: 100%;
+  outline: 1px solid #000;
+  background-color: 000 !important; }

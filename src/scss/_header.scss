@@ -52,7 +52,7 @@
 }
 
 .vertical-nav {
-  position:fixed;
+  position:absolute;
   top:0;
   right:0;
   height: 100%;
@@ -101,4 +101,28 @@
 
 .icon-info {
   background-image: url($img-dir + 'icon-info.png');
+}
+
+
+//******************************
+//horizontal-nav
+//******************************
+.horizontal-nav {
+  .horizontal-logo {
+    display: inline-block;
+  }
+
+  .horizontal-menu {
+
+    &_item {
+      display: inline-block;
+    }
+
+    &_link {
+      color: #282828;
+      font-family: "Open Sans";
+      font-size: .875em;
+      padding: 24px 12px;
+    }
+  }
 }

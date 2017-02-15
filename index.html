@@ -16,19 +16,18 @@
   <link rel="stylesheet" type="text/css" href="css/style.css" />
 
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-
-  <script type="text/javascript" src="js/scrolloverflow.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
   <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+  <script type="text/javascript" src="js/scrolloverflow.js"></script>
   <script type="text/javascript" src="js/examples.js"></script>
 
     <script type="text/javascript">
         $(document).ready(function() {
             $('#fullpage').fullpage({
               verticalCentered: true,
-              sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
-              anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', '5rdPage', '6rdPage', '7rdPage', '8rdPage', '9rdPage', '10rdPage'],
+//              sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+              anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', '5rdPage', '6rdPage', '7rdPage', '8rdPage', '9rdPage', '10rdPage', '11rdPage'],
               menu: '#menu',
               scrollOverflow: true,
       				scrollOverflowReset: true
@@ -38,91 +37,151 @@
 
 </head>
 <body>
-<nav class="vertical-nav">
-  <div class="logo"><a data-menuanchor="firstPage" href="#firstPage"></a></div>
-  <ul class="vertical-menu">
-    <li data-menuanchor="firstPage" class="vertical-menu_item active"><a class="vertical-menu_link icon-scenario" href="#firstPage"></a></li>
-    <li data-menuanchor="secondPage" class="vertical-menu_item"><a class="vertical-menu_link icon-view" href="#secondPage"></a></li>
-    <li data-menuanchor="3rdPage" class="vertical-menu_item"><a class="vertical-menu_link icon-headphones" href="#3rdPage"></a></li>
-    <li data-menuanchor="4rdPage" class="vertical-menu_item"><a class="vertical-menu_link icon-chronometry" href="#4rdPage"></a></li>
-    <li data-menuanchor="5rdPage" class="vertical-menu_item"><a class="vertical-menu_link icon-style" href="#5rdPage"></a></li>
-    <li data-menuanchor="6rdPage" class="vertical-menu_item"><a class="vertical-menu_link icon-accompaniment" href="#6rdPage"></a></li>
-    <li data-menuanchor="7rdPage" class="vertical-menu_item"><a class="vertical-menu_link icon-accent" href="#7rdPage"></a></li>
-    <li data-menuanchor="8rdPage" class="vertical-menu_item"><a class="vertical-menu_link icon-data" href="#8rdPage"></a></li>
-    <li data-menuanchor="9rdPage" class="vertical-menu_item"><a class="vertical-menu_link icon-law" href="#9rdPage"></a></li>
-    <li data-menuanchor="10rdPage" class="vertical-menu_item"><a class="vertical-menu_link icon-info" href="#10rdPage"></a></li>
-  </ul>
-</nav>
+
 
 
 <div id="fullpage">
-    <div class="section active" id="section0">
 
-      <div class="container-layout">
-        <div class="slide-view">
-          <div class="section_img"><img src="img/slide-icon-3.png" alt=""></div>
-          <h2 class="section_title">Вид продукции</h2>
-          <div class="grid">
-            <div class="grid_column">
+  <div class="section" id="section0">
+    <div class="container-layout">
+      <div class="slide-menu">
 
-              <input type="radio" id="radiospot" name="view" checked="checked">
-              <label for="radiospot">Радиоролик</label>
 
-              <input type="radio" id="shopcenter" name="view">
-              <label for="shopcenter">Ролик для торгового центра</label>
-
-              <input type="radio" id="presentation" name="view">
-              <label for="presentation">Звуковой трэк для презентации</label>
-
-            </div>
-
-            <div class="grid_column">
-              <input type="radio" id="videospot" name="view">
-              <label for="videospot">Звуковой трэк для видео ролика</label>
-
-              <input type="radio" id="autoinformer" name="view">
-              <label for="autoinformer">Автоинформатор</label>
-            </div>
-          </div>
-        </div><!--end slide-view-->
-      </div><!--end container-layout-->
-
-      <div class="c-arrow-down">
-        <div class="c-arrow-down_text">Шаг</div>
-        <div class="c-arrow-down_number">3</div>
-        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+      </div><!--end slide-menu-->
+    </div><!--end container-layout-->
+    <div class="c-arrow-down">
+      <div class="c-arrow-down_text">Шаг</div>
+      <div class="c-arrow-down_number">1</div>
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
          viewBox="0 0 80 61" enable-background="new 0 0 80 61" xml:space="preserve">
-        <g fill="#df4e04">
+        <g fill="#244f4d">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M13,0h55v37H13V0z"/>
           <path fill-rule="evenodd" clip-rule="evenodd" d="M40,37H0l40,24V37z"/>
           <path fill-rule="evenodd" clip-rule="evenodd" d="M40,37h40L40,61V37z"/>
         </g>
         </svg>
-      </div>
-    </div><!--section end-->
+    </div>
+  </div>
+  <div class="section section-scenario" id="section1">
 
-  <div class="section" id="section1">
+    <nav class="horizontal-nav">
+      <div class="container-layout">
+        <div class="horizontal-logo"><a href="#firstPage"><img src="img/logo-menu.png" alt="SaundSale"></a></div>
+        <ul class="horizontal-menu">
+          <li class="horizontal-menu_item"><a class="horizontal-menu_link" href="#">Главная </a></li>
+          <li class="horizontal-menu_item"><a class="horizontal-menu_link" href="#">Условия</a></li>
+          <li class="horizontal-menu_item"><a class="horizontal-menu_link" href="#">Портфолио</a></li>
+          <li class="horizontal-menu_item"><a class="horizontal-menu_link" href="#">Оптовым клиентам</a></li>
+          <li class="horizontal-menu_item"><a class="horizontal-menu_link" href="#">Дикторам</a></li>
+          <li class="horizontal-menu_item"><a class="horizontal-menu_link" href="#">Звукорежиссерам</a></li>
+          <li class="horizontal-menu_item"><a class="horizontal-menu_link" href="#">Контакты</a></li>
+        </ul>
+        <a class="horizontal-entry" href="#">Вход</a>
+      </div><!--container-layout-->
+    </nav><!--horizontal-nav-->
 
     <div class="container-layout">
-      <div class="slide-headphones">
+      <div class="slide-scenario">
+        <div class="section_img"><img src="img/slide-icon-2.png" alt=""></div>
+        <h2 class="section_title">Сценарий</h2>
+        <div class="grid">
+          <div class="grid_column">
+            <input type="radio" id="ready-scenario" name="scenario" checked="checked">
+            <label for="ready-scenario">Готовый сценарий</label>
+          </div>
+          <div class="grid_column">
+            <input type="radio" id="order-scenario" name="scenario">
+            <label for="order-scenario">Заказать сценарий</label>
+          </div>
+        </div>
+      </div><!--end slide-view-->
+    </div><!--end container-layout-->
+    <div class="c-arrow-down">
+      <div class="c-arrow-down_text">Шаг</div>
+      <div class="c-arrow-down_number">2</div>
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+         viewBox="0 0 80 61" enable-background="new 0 0 80 61" xml:space="preserve">
+        <g fill="#244f4d">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M13,0h55v37H13V0z"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M40,37H0l40,24V37z"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M40,37h40L40,61V37z"/>
+        </g>
+        </svg>
+    </div>
+  </div>
+
+
+  <div class="section section-view active" id="section2">
+
+    <nav class="vertical-nav">
+      <div class="logo"><a data-menuanchor="firstPage" href="#firstPage"></a></div>
+      <ul class="vertical-menu">
+        <li data-menuanchor="secondPage" class="vertical-menu_item active"><a class="vertical-menu_link icon-scenario" href="#secondPage"></a></li>
+        <li data-menuanchor="3rdPage" class="vertical-menu_item"><a class="vertical-menu_link icon-view" href="#3rdPage"></a></li>
+        <li data-menuanchor="4rdPage" class="vertical-menu_item"><a class="vertical-menu_link icon-headphones" href="#4rdPage"></a></li>
+        <li data-menuanchor="5rdPage" class="vertical-menu_item"><a class="vertical-menu_link icon-chronometry" href="#5rdPage"></a></li>
+        <li data-menuanchor="6rdPage" class="vertical-menu_item"><a class="vertical-menu_link icon-style" href="#6rdPage"></a></li>
+        <li data-menuanchor="7rdPage" class="vertical-menu_item"><a class="vertical-menu_link icon-accompaniment" href="#7rdPage"></a></li>
+        <li data-menuanchor="8rdPage" class="vertical-menu_item"><a class="vertical-menu_link icon-accent" href="#8rdPage"></a></li>
+        <li data-menuanchor="9rdPage" class="vertical-menu_item"><a class="vertical-menu_link icon-data" href="#9rdPage"></a></li>
+        <li data-menuanchor="10rdPage" class="vertical-menu_item"><a class="vertical-menu_link icon-law" href="#10rdPage"></a></li>
+        <li data-menuanchor="11rdPage" class="vertical-menu_item"><a class="vertical-menu_link icon-info" href="#11rdPage"></a></li>
+      </ul>
+    </nav>
+
+    <div class="container-layout">
+      <div class="slide-view">
+        <div class="section_img"><img src="img/slide-icon-3.png" alt=""></div>
+        <h2 class="section_title">Вид продукции</h2>
+        <div class="grid">
+          <div class="grid_column">
+            <input type="radio" id="radiospot" name="view" checked="checked">
+            <label for="radiospot">Радиоролик</label>
+            <input type="radio" id="shopcenter" name="view">
+            <label for="shopcenter">Ролик для торгового центра</label>
+            <input type="radio" id="presentation" name="view">
+            <label for="presentation">Звуковой трэк для презентации</label>
+          </div>
+          <div class="grid_column">
+            <input type="radio" id="videospot" name="view">
+            <label for="videospot">Звуковой трэк для видео ролика</label>
+            <input type="radio" id="autoinformer" name="view">
+            <label for="autoinformer">Автоинформатор</label>
+          </div>
+        </div>
+      </div><!--end slide-view-->
+    </div><!--end container-layout-->
+    <div class="c-arrow-down">
+      <div class="c-arrow-down_text">Шаг</div>
+      <div class="c-arrow-down_number">3</div>
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+       viewBox="0 0 80 61" enable-background="new 0 0 80 61" xml:space="preserve">
+      <g fill="#df4e04">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M13,0h55v37H13V0z"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M40,37H0l40,24V37z"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M40,37h40L40,61V37z"/>
+      </g>
+      </svg>
+    </div>
+  </div><!--section end-->
+
+  <div class="section section-type" id="section3">
+    <div class="container-layout">
+      <div class="slide-type">
         <div class="section_img"><img src="img/slide-icon-4-1.png" alt=""></div>
         <h2 class="section_title">Тип ролика</h2>
         <div class="grid">
           <div class="grid_column">
             <input type="radio" id="type-information" name="headphones" checked="checked">
             <label for="type-information">Информационный</label>
-
           </div>
-
           <div class="grid_column">
             <input type="radio" id="type-gamers" name="headphones">
             <label for="type-gamers">Игровой</label>
-
           </div>
         </div>
-      </div><!--end slide-view-->
-    </div><!--end container-layout-->
-
+      </div>
+    </div>
     <div class="c-arrow-down">
       <div class="c-arrow-down_text">Шаг</div>
       <div class="c-arrow-down_number">4</div>
@@ -135,10 +194,9 @@
         </g>
         </svg>
     </div>
-  </div><!--section end-->
+  </div>
 
-  <div class="section" id="section2">
-
+  <div class="section section-chronometry" id="section4">
     <div class="container-layout">
       <div class="slide-chronometry">
         <div class="section_img"><img src="img/slide-icon-chronometry.png" alt=""></div>
@@ -189,10 +247,10 @@
     </div>
   </div><!--section end-->
 
-  <div class="section" id="section3">
+  <div class="section section-form-style" id="section5">
   </div><!--section end-->
 
-  <div class="section" id="section4">
+  <div class="section section-incidental" id="section6">
     <div class="container-layout">
       <div class="slide-incidental">
         <div class="section_img"><img src="img/slide-icon-incidental.png" alt=""></div>
@@ -203,7 +261,6 @@
             <label for="incidental-auto">Довериться специалистам</label>
           </div>
         </div><!--end grid-->
-
         <h3 class="section_subtitle">Свой выбор</h3>
         <div class="grid">
           <div class="grid_column">
@@ -294,6 +351,50 @@
             </div>
           </div><!--end grid-column-->
 
+          <div class="grid_column">
+            <h4 class="section_small-title">Национальность:</h4>
+            <div class="grid_item">
+              <input type="radio" id="india" name="nationality">
+              <label for="india">Индия</label>
+            </div>
+            <div class="grid_item">
+              <input type="radio" id="china" name="nationality">
+              <label for="china">Китай</label>
+            </div>
+            <div class="grid_item">
+              <input type="radio" id="caucasus" name="nationality">
+              <label for="caucasus">Кавказ</label>
+            </div>
+            <div class="grid_item">
+              <input type="radio" id="japan" name="nationality">
+              <label for="japan">Япония</label>
+            </div>
+            <div class="grid_item">
+              <input type="radio" id="brazil" name="nationality">
+              <label for="brazil">Бразилия</label>
+            </div>
+            <div class="grid_item">
+              <input type="radio" id="africa" name="nationality">
+              <label for="africa">Африка</label>
+            </div>
+            <div class="grid_item">
+              <input type="radio" id="europe" name="nationality" checked="checked">
+              <label for="europe">Европа</label>
+            </div>
+            <div class="grid_item">
+              <input type="radio" id="russia" name="nationality">
+              <label for="russia">Русская народная</label>
+            </div>
+            <div class="grid_item">
+              <input type="radio" id="jews" name="nationality">
+              <label for="jews">Еврейские народные мотивы</label>
+            </div>
+            <div class="grid_item">
+              <input type="radio" id="tajikistan" name="nationality">
+              <label for="tajikistan">Таджикистан</label>
+            </div>
+          </div><!--end grid-column-->
+
         </div><!--end grid-->
 
 
@@ -306,7 +407,7 @@
       <div class="c-arrow-down_number">5</div>
       <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
          viewBox="0 0 80 61" enable-background="new 0 0 80 61" xml:space="preserve">
-        <g fill="#0a556d">
+        <g fill="#2d4556">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M13,0h55v37H13V0z"/>
           <path fill-rule="evenodd" clip-rule="evenodd" d="M40,37H0l40,24V37z"/>
           <path fill-rule="evenodd" clip-rule="evenodd" d="M40,37h40L40,61V37z"/>
@@ -316,13 +417,13 @@
   </div><!--section end-->
 
 
-  <div class="section" id="section5">
+  <div class="section" id="section7">
 
   </div><!--section end-->
 
-  <div class="section" id="section6">
+  <div class="section section-output" id="section8">
     <div class="container-layout">
-      <div class="slide-view">
+      <div class="slide-output">
         <div class="section_img"><img src="img/slide-icon-data.png" alt=""></div>
         <h2 class="section_title">Выходные данные</h2>
 
@@ -354,49 +455,37 @@
     </div>
   </div><!--section end-->
 
-  <div class="section" id="section7">
-
+  <div class="section section-law" id="section9">
     <div class="container-layout">
-      <div class="slide-view">
+      <div class="slide-law">
         <div class="section_img"><img src="img/slide-icon-law.png" alt=""></div>
         <h2 class="section_title">Соответствия закону о рекламе</h2>
         <div class="grid">
           <div class="grid_column">
-
             <input type="radio" id="sellout" name="law" checked="checked">
             <label for="sellout">Распродажи</label>
-
             <input type="radio" id="discounts" name="law">
             <label for="discounts">Скидки</label>
-
             <input type="radio" id="gifts" name="law">
             <label for="gifts">Подарки</label>
-
             <input type="radio" id="drawing" name="law">
             <label for="drawing">Розыгрыши</label>
-
             <input type="radio" id="credit" name="law">
             <label for="credit">Кредит</label>
-
           </div>
-
           <div class="grid_column">
             <input type="radio" id="leasing" name="law">
             <label for="leasing">Рассрочки</label>
-
             <input type="radio" id="medicine" name="law">
             <label for="medicine">Медицинские услуги и оборудование</label>
-
             <input type="radio" id="events" name="law">
             <label for="events">Мероприятия (концерты, выставки, семинары и т. д.)</label>
-
             <input type="radio" id="products" name="law">
             <label for="products">Производство и доставка продуктов питания</label>
           </div>
         </div>
       </div><!--end slide-view-->
     </div><!--end container-layout-->
-
     <div class="c-arrow-down">
       <div class="c-arrow-down_text">Шаг</div>
       <div class="c-arrow-down_number">10</div>
@@ -411,8 +500,7 @@
     </div>
   </div><!--section end-->
 
-  <div class="section" id="section8">
-
+  <div class="section section-information" id="section10">
     <h2 class="section_title">Информация о ролике:</h2>
     <div class="container-layout">
       <ul class="information">
@@ -457,16 +545,12 @@
           <div class="information_text">Скидки</div>
         </li>
       </ul>
-
       <div class="advertising-law">
         <input type="checkbox" id="advertising-law" name="advertising-law">
         <label for="advertising-law">Знаком с законом о рекламе, всю ответственность беру на себя.</label>
       </div>
     </div><!--container-layout-->
-
-
     <button class="btn-price">Рассчитать стоимость</button>
-
   </div><!--section end-->
 
 
