@@ -97,7 +97,7 @@ p {
   text-align: center;
 }
 
-label {
+.c-label {
   display: inline-block;
   cursor: pointer;
   font: 600 18px/1.2 $font-text;
@@ -105,7 +105,6 @@ label {
   color: #fff;
   padding: 0;
   position: relative;
-
 }
 
 input[type=radio],
@@ -113,7 +112,7 @@ input[type=checkbox] {
   display: none;
 }
 
-label::before {
+.c-label::before {
   content: "";
   display: inline-block;
   position: relative;
@@ -127,8 +126,8 @@ label::before {
   margin-bottom: 10px;
 }
 
-input[type=radio]:checked + label:after,
-input[type=checkbox]:checked + label:after {
+input[type=radio]:checked + .c-label::after,
+input[type=checkbox]:checked + .c-label::after {
   content: "";
   width: 27px;
   height: 24px;
