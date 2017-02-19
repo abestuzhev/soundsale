@@ -19,6 +19,7 @@
   <script type="text/javascript" src="js/scrolloverflow.js"></script>
   <script type="text/javascript" src="js/examples.js"></script>
   <script src="bower_components/mediaelement/build/mediaelement-and-player.min.js"></script>
+  <script src="bower_components/sticky-kit/jquery.sticky-kit.js"></script>
 
   <script type="text/javascript">
     $(document).ready(function () {
@@ -34,6 +35,10 @@
       function uploadFile(target) {
         document.getElementById("file-name").innerHTML = target.files[0].name;
       }
+
+
+      $("#js-horizontal-nav").stick_in_parent();
+      $("#js-vertical-nav").stick_in_parent();
     });
   </script>
 
@@ -73,9 +78,9 @@
         </svg>
     </div>
   </div>
-  <div class="section section-scenario" id="section1">
+  <div class="section section-scenario" id="section1" data-sticky_parent>
 
-    <nav class="horizontal-nav">
+    <nav class="horizontal-nav" id="js-horizontal-nav">
       <div class="container-layout">
         <div class="horizontal-logo"><a href="#firstPage"><img src="img/logo-menu.png" alt="SaundSale"></a></div>
         <ul class="horizontal-menu">
@@ -122,9 +127,9 @@
   </div>
 
 
-  <div class="section section-view" id="section2">
+  <div class="section section-view" id="section2" data-sticky_parent>
 
-    <nav class="vertical-nav">
+    <nav class="vertical-nav" id="js-vertical-nav">
       <div class="logo"><a data-menuanchor="firstPage" href="#firstPage"></a></div>
       <ul class="vertical-menu">
         <li data-menuanchor="secondPage" class="vertical-menu_item active"><a class="vertical-menu_link icon-scenario"
@@ -700,15 +705,16 @@
 
 
 </div>
+<!--<script src="js/main.js"></script>-->
 <script type="text/javascript">
   $(document).ready(function () {
     $('.audio-player').mediaelementplayer({
       alwaysShowControls: true,
       features: ['playpause', 'volume', 'progress', 'current', 'duration'],
       audioVolume: 'horizontal',
-//      audioWidth: 100%
       audioHeight: 30
     });
+
   });
 </script>
 </body>
