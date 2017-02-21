@@ -19,7 +19,10 @@
   <script type="text/javascript" src="js/scrolloverflow.js"></script>
   <script type="text/javascript" src="js/examples.js"></script>
   <script src="bower_components/mediaelement/build/mediaelement-and-player.min.js"></script>
-  <script src="bower_components/sticky-kit/jquery.sticky-kit.js"></script>
+  <!-- <script src="bower_components/sticky-kit/jquery.sticky-kit.min.js"></script> -->
+  <script src="js/jquery.stickybox.js"></script>
+
+
 
   <script type="text/javascript">
     $(document).ready(function () {
@@ -27,9 +30,14 @@
         verticalCentered: true,
 //              sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
         anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', '5rdPage', '6rdPage', '7rdPage', '8rdPage', '9rdPage', '10rdPage', '11rdPage'],
-        menu: '#menu',
+        menu: '#vertical-nav',
         scrollOverflow: true,
-        scrollOverflowReset: true
+        afterLoad:function(link,index) {
+          if(index == 3) {
+          $("#vertical-nav").css("display", "block");
+          }
+        }
+        // scrollOverflowReset: true
       });
 
       function uploadFile(target) {
@@ -37,15 +45,37 @@
       }
 
 
-      $("#js-horizontal-nav").stick_in_parent();
-      $("#js-vertical-nav").stick_in_parent();
     });
   </script>
 
 </head>
 <body>
 
-
+  <nav class="vertical-nav" id="vertical-nav">
+    <div class="logo"><a data-menuanchor="firstPage" href="#firstPage"></a></div>
+    <ul class="vertical-menu">
+      <li data-menuanchor="secondPage" class="vertical-menu_item active"><a class="vertical-menu_link icon-scenario"
+                                                                            href="#secondPage"></a></li>
+      <li data-menuanchor="3rdPage" class="vertical-menu_item"><a class="vertical-menu_link icon-view"
+                                                                  href="#3rdPage"></a></li>
+      <li data-menuanchor="4rdPage" class="vertical-menu_item"><a class="vertical-menu_link icon-headphones"
+                                                                  href="#4rdPage"></a></li>
+      <li data-menuanchor="5rdPage" class="vertical-menu_item"><a class="vertical-menu_link icon-chronometry"
+                                                                  href="#5rdPage"></a></li>
+      <li data-menuanchor="6rdPage" class="vertical-menu_item"><a class="vertical-menu_link icon-style"
+                                                                  href="#6rdPage"></a></li>
+      <li data-menuanchor="7rdPage" class="vertical-menu_item"><a class="vertical-menu_link icon-accompaniment"
+                                                                  href="#7rdPage"></a></li>
+      <li data-menuanchor="8rdPage" class="vertical-menu_item"><a class="vertical-menu_link icon-accent"
+                                                                  href="#8rdPage"></a></li>
+      <li data-menuanchor="9rdPage" class="vertical-menu_item"><a class="vertical-menu_link icon-data"
+                                                                  href="#9rdPage"></a></li>
+      <li data-menuanchor="10rdPage" class="vertical-menu_item"><a class="vertical-menu_link icon-law"
+                                                                   href="#10rdPage"></a></li>
+      <li data-menuanchor="11rdPage" class="vertical-menu_item"><a class="vertical-menu_link icon-info"
+                                                                   href="#11rdPage"></a></li>
+    </ul>
+  </nav>
 <div id="fullpage">
 
   <div class="section section-menu active" id="section0">
@@ -127,33 +157,7 @@
   </div>
 
 
-  <div class="section section-view" id="section2" data-sticky_parent>
-
-    <nav class="vertical-nav" id="js-vertical-nav">
-      <div class="logo"><a data-menuanchor="firstPage" href="#firstPage"></a></div>
-      <ul class="vertical-menu">
-        <li data-menuanchor="secondPage" class="vertical-menu_item active"><a class="vertical-menu_link icon-scenario"
-                                                                              href="#secondPage"></a></li>
-        <li data-menuanchor="3rdPage" class="vertical-menu_item"><a class="vertical-menu_link icon-view"
-                                                                    href="#3rdPage"></a></li>
-        <li data-menuanchor="4rdPage" class="vertical-menu_item"><a class="vertical-menu_link icon-headphones"
-                                                                    href="#4rdPage"></a></li>
-        <li data-menuanchor="5rdPage" class="vertical-menu_item"><a class="vertical-menu_link icon-chronometry"
-                                                                    href="#5rdPage"></a></li>
-        <li data-menuanchor="6rdPage" class="vertical-menu_item"><a class="vertical-menu_link icon-style"
-                                                                    href="#6rdPage"></a></li>
-        <li data-menuanchor="7rdPage" class="vertical-menu_item"><a class="vertical-menu_link icon-accompaniment"
-                                                                    href="#7rdPage"></a></li>
-        <li data-menuanchor="8rdPage" class="vertical-menu_item"><a class="vertical-menu_link icon-accent"
-                                                                    href="#8rdPage"></a></li>
-        <li data-menuanchor="9rdPage" class="vertical-menu_item"><a class="vertical-menu_link icon-data"
-                                                                    href="#9rdPage"></a></li>
-        <li data-menuanchor="10rdPage" class="vertical-menu_item"><a class="vertical-menu_link icon-law"
-                                                                     href="#10rdPage"></a></li>
-        <li data-menuanchor="11rdPage" class="vertical-menu_item"><a class="vertical-menu_link icon-info"
-                                                                     href="#11rdPage"></a></li>
-      </ul>
-    </nav>
+  <div class="section section-view" id="section2">
 
     <div class="container-layout">
       <div class="slide-view">
@@ -714,6 +718,11 @@
       audioVolume: 'horizontal',
       audioHeight: 30
     });
+
+    // $("#js-horizontal-nav").stick_in_parent();
+    // $("#js-vertical-nav").stick_in_parent();
+    $("#menu").stickyBox();
+
 
   });
 </script>

@@ -670,7 +670,7 @@ input[placeholder] {
 
 .vertical-menu_item.active {
   background: #666;
-  background: rgba(0, 0, 0, 0.5);
+  background: #000;
   color: #fff; }
 
 .vertical-menu_link {
@@ -710,7 +710,8 @@ input[placeholder] {
   z-index: 70;
   padding: 0;
   margin: 0;
-  background-color: #222424; }
+  background-color: #222424;
+  display: none; }
 
 .icon-scenario {
   background-image: url("../img/icon-scenario.png"); }
@@ -1040,8 +1041,8 @@ input[placeholder] {
 
 .slide-incidental .section_img {
   position: absolute;
-  top: -180px;
-  right: 0; }
+  top: 226px;
+  right: 121px; }
 
 .slide-incidental .grid,
 .slide-incidental .grid_column {
@@ -1348,3 +1349,27 @@ input[placeholder] {
 
 .SumoSelect.open > .optWrapper {
   top: 48px; }
+
+@media all and (max-width: 1060px) {
+  .section_img img {
+    width: 57%; }
+  .slide-form-style .section_img img {
+    width: 42%; } }
+
+@media all and (max-width: 980px) {
+  .section_title {
+    font-size: 2.75em; }
+  .container-layout {
+    width: 100%;
+    padding-right: 50px; }
+  .section-type .slide-type,
+  .section-scenario .slide-scenario {
+    padding: 0; }
+  .section-scenario .grid_column {
+    text-align: center !important; }
+  .c-label {
+    font-size: 15px; }
+  .section-law .grid_column:first-child {
+    margin: 0; }
+  .slide-chronometry .grid {
+    padding: 0; } }
