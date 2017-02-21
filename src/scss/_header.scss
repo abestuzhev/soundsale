@@ -101,6 +101,8 @@
 //******************************
 //vertical-nav
 //******************************
+
+
 .vertical-menu_item {
   display: block;
   /*margin: 10px;*/
@@ -108,8 +110,16 @@
   border-top: 1px solid #434343;
   border-bottom: 1px solid #434343;
   padding: 12px 14px;
+  cursor: pointer;
+  text-align: right;
+}
 
-
+.vertical-menu_text {
+  display: inline-block;
+  color: #656565;
+  font-family: "Open Sans";
+  font-size: 13px;
+  font-weight: 400;
 }
 
 .vertical-menu_item.active{
@@ -121,8 +131,8 @@
 .vertical-menu_link {
   text-decoration:none;
   color: #000;
-  text-align: center;
-  display: block;
+  //text-align: center;
+  display: inline-block;
   width: 24px;
   height: 21px;
   overflow: hidden;
@@ -158,11 +168,17 @@
   top:0;
   right:0;
   height: 100%;
-  z-index: 70;
+  z-index: 999;
   padding: 0;
   margin:0;
   background-color: #222424;
-  display: none;
+  transform: translateX(52px);
+  transition: all .08s ease-out;
+
+  &:hover {
+    width: 205px;
+    transition: all .08s ease-out;
+  }
 }
 
 //vertical-nav
@@ -214,9 +230,12 @@
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 998;
   width: 100%;
   background-color: #F9F9F9;
   box-shadow: 1px 1.7px 7px rgba(0, 0, 0, 0.15);
+  transform: translateY(-64px);
+  transition: all .08s ease-out;
 
   &::after {
     content: '';

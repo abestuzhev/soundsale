@@ -12,7 +12,6 @@
   <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css"/>
   <link rel="stylesheet" type="text/css" href="css/examples.css"/>
   <link rel="stylesheet" type="text/css" href="css/style.css"/>
-  <!--<link rel="stylesheet" href="bower_components/mediaelement/build/mediaelementplayer.min.css">-->
 
   <script src="bower_components/jquery/dist/jquery.js"></script>
   <script type="text/javascript" src="js/jquery.fullPage.js"></script>
@@ -23,21 +22,30 @@
   <script src="js/jquery.stickybox.js"></script>
 
 
-
   <script type="text/javascript">
     $(document).ready(function () {
       $('#fullpage').fullpage({
         verticalCentered: true,
 //              sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
-        anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', '5rdPage', '6rdPage', '7rdPage', '8rdPage', '9rdPage', '10rdPage', '11rdPage'],
+        anchors: ['firstPage', 'secondPage', '3rdPage', '4rdPage', '5rdPage', '6rdPage', '7rdPage', '8rdPage', '9rdPage', '10rdPage', '11rdPage'],
         menu: '#vertical-nav',
         scrollOverflow: true,
-        afterLoad:function(link,index) {
-          if(index == 3) {
-          $("#vertical-nav").css("display", "block");
+        afterLoad: function (link, index) {
+          if (index == 3) {
+            $(".vertical-nav").css("transform", "translateX(0)");
+          } else if (index == 2) {
+            $(".vertical-nav").css("transform", "translateX(52px)");
+            $(".horizontal-nav").css("transform", "translateY(0)");
+          } else if (index == 1) {
+            $(".vertical-nav").css("transform", "translateX(52px)");
+            $(".horizontal-nav").css("transform", "translateY(-64px)");
           }
-        }
-        // scrollOverflowReset: true
+        },
+         scrollOverflowReset: true
+      });
+
+      $('.c-arrow-down').click(function(){
+        $.fn.fullpage.moveSectionDown();
       });
 
       function uploadFile(target) {
@@ -51,31 +59,58 @@
 </head>
 <body>
 
-  <nav class="vertical-nav" id="vertical-nav">
-    <div class="logo"><a data-menuanchor="firstPage" href="#firstPage"></a></div>
-    <ul class="vertical-menu">
-      <li data-menuanchor="secondPage" class="vertical-menu_item active"><a class="vertical-menu_link icon-scenario"
-                                                                            href="#secondPage"></a></li>
-      <li data-menuanchor="3rdPage" class="vertical-menu_item"><a class="vertical-menu_link icon-view"
-                                                                  href="#3rdPage"></a></li>
-      <li data-menuanchor="4rdPage" class="vertical-menu_item"><a class="vertical-menu_link icon-headphones"
-                                                                  href="#4rdPage"></a></li>
-      <li data-menuanchor="5rdPage" class="vertical-menu_item"><a class="vertical-menu_link icon-chronometry"
-                                                                  href="#5rdPage"></a></li>
-      <li data-menuanchor="6rdPage" class="vertical-menu_item"><a class="vertical-menu_link icon-style"
-                                                                  href="#6rdPage"></a></li>
-      <li data-menuanchor="7rdPage" class="vertical-menu_item"><a class="vertical-menu_link icon-accompaniment"
-                                                                  href="#7rdPage"></a></li>
-      <li data-menuanchor="8rdPage" class="vertical-menu_item"><a class="vertical-menu_link icon-accent"
-                                                                  href="#8rdPage"></a></li>
-      <li data-menuanchor="9rdPage" class="vertical-menu_item"><a class="vertical-menu_link icon-data"
-                                                                  href="#9rdPage"></a></li>
-      <li data-menuanchor="10rdPage" class="vertical-menu_item"><a class="vertical-menu_link icon-law"
-                                                                   href="#10rdPage"></a></li>
-      <li data-menuanchor="11rdPage" class="vertical-menu_item"><a class="vertical-menu_link icon-info"
-                                                                   href="#11rdPage"></a></li>
+<nav class="horizontal-nav" id="js-horizontal-nav">
+  <div class="container-layout">
+    <div class="horizontal-logo"><a href="#firstPage"><img src="img/logo-menu.png" alt="SaundSale"></a></div>
+    <ul class="horizontal-menu">
+      <li class="horizontal-menu_item"><a class="horizontal-menu_link" href="#">Главная </a></li>
+      <li class="horizontal-menu_item"><a class="horizontal-menu_link" href="#">Условия</a></li>
+      <li class="horizontal-menu_item"><a class="horizontal-menu_link" href="#">Портфолио</a></li>
+      <li class="horizontal-menu_item"><a class="horizontal-menu_link" href="#">Оптовым клиентам</a></li>
+      <li class="horizontal-menu_item"><a class="horizontal-menu_link" href="#">Дикторам</a></li>
+      <li class="horizontal-menu_item"><a class="horizontal-menu_link" href="#">Звукорежиссерам</a></li>
+      <li class="horizontal-menu_item"><a class="horizontal-menu_link" href="#">Контакты</a></li>
     </ul>
-  </nav>
+    <a class="horizontal-entry" href="#">Вход</a>
+  </div><!--container-layout-->
+</nav><!--horizontal-nav-->
+
+<nav class="vertical-nav" id="vertical-nav">
+  <div class="logo"><a data-menuanchor="firstPage" href="#firstPage"></a></div>
+  <ul class="vertical-menu">
+    <li data-menuanchor="secondPage" class="vertical-menu_item active">
+      <div class="vertical-menu_text">Сценарий</div>
+      <a class="vertical-menu_link icon-scenario" href="#secondPage"></a>
+    </li>
+    <li data-menuanchor="3rdPage" class="vertical-menu_item">
+      <a class="vertical-menu_link icon-view" href="#3rdPage"></a>
+    </li>
+    <li data-menuanchor="4rdPage" class="vertical-menu_item">
+      <a class="vertical-menu_link icon-headphones" href="#4rdPage"></a>
+    </li>
+    <li data-menuanchor="5rdPage" class="vertical-menu_item">
+      <a class="vertical-menu_link icon-chronometry" href="#5rdPage"></a>
+    </li>
+    <li data-menuanchor="6rdPage" class="vertical-menu_item">
+      <a class="vertical-menu_link icon-style" href="#6rdPage"></a>
+    </li>
+    <li data-menuanchor="7rdPage" class="vertical-menu_item">
+      <a class="vertical-menu_link icon-accompaniment" href="#7rdPage"></a>
+    </li>
+    <li data-menuanchor="8rdPage" class="vertical-menu_item">
+      <a class="vertical-menu_link icon-accent" href="#8rdPage"></a>
+    </li>
+    <li data-menuanchor="9rdPage" class="vertical-menu_item">
+      <a class="vertical-menu_link icon-data" href="#9rdPage"></a>
+    </li>
+    <li data-menuanchor="10rdPage" class="vertical-menu_item">
+      <a class="vertical-menu_link icon-law" href="#10rdPage"></a>
+    </li>
+    <li data-menuanchor="11rdPage" class="vertical-menu_item">
+      <a class="vertical-menu_link icon-info" href="#11rdPage"></a>
+    </li>
+  </ul>
+</nav>
 <div id="fullpage">
 
   <div class="section section-menu active" id="section0">
@@ -110,21 +145,7 @@
   </div>
   <div class="section section-scenario" id="section1" data-sticky_parent>
 
-    <nav class="horizontal-nav" id="js-horizontal-nav">
-      <div class="container-layout">
-        <div class="horizontal-logo"><a href="#firstPage"><img src="img/logo-menu.png" alt="SaundSale"></a></div>
-        <ul class="horizontal-menu">
-          <li class="horizontal-menu_item"><a class="horizontal-menu_link" href="#">Главная </a></li>
-          <li class="horizontal-menu_item"><a class="horizontal-menu_link" href="#">Условия</a></li>
-          <li class="horizontal-menu_item"><a class="horizontal-menu_link" href="#">Портфолио</a></li>
-          <li class="horizontal-menu_item"><a class="horizontal-menu_link" href="#">Оптовым клиентам</a></li>
-          <li class="horizontal-menu_item"><a class="horizontal-menu_link" href="#">Дикторам</a></li>
-          <li class="horizontal-menu_item"><a class="horizontal-menu_link" href="#">Звукорежиссерам</a></li>
-          <li class="horizontal-menu_item"><a class="horizontal-menu_link" href="#">Контакты</a></li>
-        </ul>
-        <a class="horizontal-entry" href="#">Вход</a>
-      </div><!--container-layout-->
-    </nav><!--horizontal-nav-->
+
 
     <div class="container-layout">
       <div class="slide-scenario">

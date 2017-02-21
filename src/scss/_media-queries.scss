@@ -1,18 +1,27 @@
-@media all and (max-width: 1060px) {
+@media all and (max-width: 1367px) {
   .section_img img{
     width: 57%;
   }
 
   .slide-form-style .section_img img {
-    width: 42%;
+    width: 18%;
   }
-}
+  .slide-scenario .section_img img {
+    width: 70%;
+  }
+  .slide-accent .section_img img {
+    width: 34%;
+  }
 
-@media all and (max-width: 980px) {
   .section_title {
     font-size: 2.75em;
   }
 
+}
+
+
+
+@media all and (max-width: 980px) {
   .container-layout {
     width: 100%;
     padding-right: 50px;

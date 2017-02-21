@@ -120,7 +120,8 @@ input[placeholder] {
   bottom: 20px;
   left: 50%;
   margin-left: -40px;
-  cursor: pointer; }
+  cursor: pointer;
+  z-index: 999; }
   .c-arrow-down_text, .c-arrow-down_number {
     position: absolute;
     text-align: center;
@@ -666,7 +667,16 @@ input[placeholder] {
   color: #000;
   border-top: 1px solid #434343;
   border-bottom: 1px solid #434343;
-  padding: 12px 14px; }
+  padding: 12px 14px;
+  cursor: pointer;
+  text-align: right; }
+
+.vertical-menu_text {
+  display: inline-block;
+  color: #656565;
+  font-family: "Open Sans";
+  font-size: 13px;
+  font-weight: 400; }
 
 .vertical-menu_item.active {
   background: #666;
@@ -676,8 +686,7 @@ input[placeholder] {
 .vertical-menu_link {
   text-decoration: none;
   color: #000;
-  text-align: center;
-  display: block;
+  display: inline-block;
   width: 24px;
   height: 21px;
   overflow: hidden;
@@ -707,11 +716,17 @@ input[placeholder] {
   top: 0;
   right: 0;
   height: 100%;
-  z-index: 70;
+  z-index: 999;
   padding: 0;
   margin: 0;
   background-color: #222424;
-  display: none; }
+  -webkit-transform: translateX(52px);
+      -ms-transform: translateX(52px);
+          transform: translateX(52px);
+  transition: all .08s ease-out; }
+  .vertical-nav:hover {
+    width: 205px;
+    transition: all .08s ease-out; }
 
 .icon-scenario {
   background-image: url("../img/icon-scenario.png"); }
@@ -747,9 +762,14 @@ input[placeholder] {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 998;
   width: 100%;
   background-color: #F9F9F9;
-  box-shadow: 1px 1.7px 7px rgba(0, 0, 0, 0.15); }
+  box-shadow: 1px 1.7px 7px rgba(0, 0, 0, 0.15);
+  -webkit-transform: translateY(-64px);
+      -ms-transform: translateY(-64px);
+          transform: translateY(-64px);
+  transition: all .08s ease-out; }
   .horizontal-nav::after {
     content: '';
     display: block;
@@ -1127,11 +1147,13 @@ input[placeholder] {
     font-weight: 400; }
 
 .advertising-law {
+  position: relative;
   text-align: left;
   padding: 34px 0;
   border-bottom: 1px solid #351C1B; }
   .advertising-law label {
-    color: #3A3A3A; }
+    color: #3A3A3A;
+    cursor: pointer; }
   .advertising-law label::before {
     content: "";
     display: inline-block;
@@ -1151,9 +1173,10 @@ input[placeholder] {
     width: 74px;
     height: 74px;
     position: absolute;
-    top: 0;
+    top: 33px;
     left: 0;
-    background: url("../img/icon-advertising-law.png") no-repeat 50% 50%; }
+    background: url("../img/icon-advertising-law.png") no-repeat 50% 50%;
+    transition: all .2s ease-out; }
 
 .section-item {
   height: 100%;
@@ -1350,15 +1373,19 @@ input[placeholder] {
 .SumoSelect.open > .optWrapper {
   top: 48px; }
 
-@media all and (max-width: 1060px) {
+@media all and (max-width: 1367px) {
   .section_img img {
     width: 57%; }
   .slide-form-style .section_img img {
-    width: 42%; } }
+    width: 18%; }
+  .slide-scenario .section_img img {
+    width: 70%; }
+  .slide-accent .section_img img {
+    width: 34%; }
+  .section_title {
+    font-size: 2.75em; } }
 
 @media all and (max-width: 980px) {
-  .section_title {
-    font-size: 2.75em; }
   .container-layout {
     width: 100%;
     padding-right: 50px; }
