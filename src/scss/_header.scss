@@ -102,6 +102,24 @@
 //vertical-nav
 //******************************
 
+.vertical-nav {
+  position:absolute;
+  top:0;
+  right:0;
+  height: 100%;
+  z-index: 999;
+  padding: 0;
+  margin:0;
+  background-color: #222424;
+  transform: translateX(52px);
+  transition: all .08s ease-out;
+  //
+  // &:hover {
+  //   width: 205px;
+  //   transition: all .08s ease-out;
+  // }
+}
+
 
 .vertical-menu_item {
   display: block;
@@ -111,13 +129,14 @@
   border-bottom: 1px solid #434343;
   padding: 12px 14px;
   cursor: pointer;
-  text-align: right;
+  // text-align: right;
+  position: relative;
 }
 
 .vertical-menu_text {
   display: inline-block;
   color: #656565;
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   font-size: 13px;
   font-weight: 400;
 }
@@ -129,9 +148,12 @@
 }
 
 .vertical-menu_link {
+  // position: absolute;
+  // top: 12px;
+  // right: 14px;
   text-decoration:none;
   color: #000;
-  //text-align: center;
+  text-align: center;
   display: inline-block;
   width: 24px;
   height: 21px;
@@ -163,25 +185,7 @@
   color: #fff;
 }
 
-.vertical-nav {
-  position:absolute;
-  top:0;
-  right:0;
-  height: 100%;
-  z-index: 999;
-  padding: 0;
-  margin:0;
-  background-color: #222424;
-  transform: translateX(52px);
-  transition: all .08s ease-out;
-
-  &:hover {
-    width: 205px;
-    transition: all .08s ease-out;
-  }
-}
-
-//vertical-nav
+//vertical-nav-icon
 .icon-scenario {
   background-image: url($img-dir + 'icon-scenario.png');
 }
@@ -264,7 +268,7 @@
     &_link {
       display: block;
       color: #282828;
-      font-family: "Open Sans";
+      font-family: "Open Sans", sans-serif;
       font-size: .875em;
       padding: 24px 12px;
       transition: all .2s ease-out;

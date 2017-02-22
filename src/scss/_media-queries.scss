@@ -22,6 +22,43 @@
 
 
 @media all and (max-width: 980px) {
+
+
+  .horizontal-nav .horizontal-menu_link {
+    padding: 24px 5px;
+  }
+
+  .horizontal-nav .horizontal-logo {
+    margin-right: 10px;
+  }
+
+  .contact_footer .footer-menu {
+    float: none;
+    margin-left: 255px;
+  }
+
+  .contact_footer .footer-menu_link {
+    padding-top: 0;
+    padding-bottom: 8px;
+  }
+
+  .contact_footer .footer-menu_item::after {
+    content: "";
+    display: none;
+  }
+
+  .footer-menu_item:first-child .footer-menu_link {
+    padding-left: 8px;
+  }
+
+  .contact .contact-main_img {
+    width: 80%;
+  }
+
+  .works-footer .footer-menu_link {
+    padding: 10px;
+  }
+
   .container-layout {
     width: 100%;
     padding-right: 50px;
@@ -46,5 +83,14 @@
 
   .slide-chronometry .grid {
     padding: 0;
+  }
+
+  //works
+  .c-card-works .mejs__controls .mejs__time-rail {
+    width: 200px !important;
+  }
+
+  .c-card-works .player-layout {
+    width: 400px;
   }
 }

@@ -6,6 +6,7 @@
   <meta name="author" content="Matthew Howell"/>
   <meta name="description" content="Заказ аудио для вашей рекламы"/>
   <meta name="keywords" content="Реклама на радио, аудио, аудиоролик, продажа звука"/>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
 
 
   <link rel="stylesheet" type="text/css" href="bower_components/normalize-css/normalize.css"/>
@@ -51,8 +52,6 @@
       function uploadFile(target) {
         document.getElementById("file-name").innerHTML = target.files[0].name;
       }
-
-
     });
   </script>
 
@@ -79,7 +78,7 @@
   <div class="logo"><a data-menuanchor="firstPage" href="#firstPage"></a></div>
   <ul class="vertical-menu">
     <li data-menuanchor="secondPage" class="vertical-menu_item active">
-      <div class="vertical-menu_text">Сценарий</div>
+      <!-- <div class="vertical-menu_text">Сценарий</div> -->
       <a class="vertical-menu_link icon-scenario" href="#secondPage"></a>
     </li>
     <li data-menuanchor="3rdPage" class="vertical-menu_item">
@@ -111,8 +110,8 @@
     </li>
   </ul>
 </nav>
-<div id="fullpage">
 
+<div id="fullpage">
   <div class="section section-menu active" id="section0">
     <div class="container-layout">
       <div class="slide-menu">
@@ -143,7 +142,7 @@
         </svg>
     </div>
   </div>
-  <div class="section section-scenario" id="section1" data-sticky_parent>
+  <div class="section section-scenario" id="section1">
 
 
 
@@ -290,6 +289,24 @@
             <input type="text" name="other" placeholder="другой">
           </div>
         </div><!--end grid-->
+        <div class="text-entry">
+          <div class="text-entry_box">
+            <textarea class="text-entry_area" name="name" rows="" cols=""></textarea>
+            <div class="text-entry_subtext">Скопируйте текст в окно. Удалите ремарки и комментарии.</div>
+            <a class="text-entry_button" href="#">Сбросить</a>
+          </div>
+
+          <div class="text-entry_slide">
+            <div class="text-entry_slide-horizontal">
+              <div class="text-entry_slide-range"></div>
+              <div class="text-entry_slide-handler"></div>
+            </div>
+            <div class="text-entry_slide-text">Хронометраж: 31 сек.</div>
+          </div>
+          <div class="text-entry_info"><span>Слов: 57</span> Для достижения требуемого хронометража <span>добавьте 227 слов</span></div>
+          <div class="text-entry_text">* Вы должны учитывать тот факт, что расчёт времени будет примерным.</div>
+        </div>
+
       </div><!--end slide-chronometry-->
     </div><!--end container-layout-->
 
