@@ -21,38 +21,11 @@
   <script src="bower_components/mediaelement/build/mediaelement-and-player.min.js"></script>
   <!-- <script src="bower_components/sticky-kit/jquery.sticky-kit.min.js"></script> -->
   <script src="js/jquery.stickybox.js"></script>
+  <script src="js/main.js"></script>
 
 
   <script type="text/javascript">
-    $(document).ready(function () {
-      $('#fullpage').fullpage({
-        verticalCentered: true,
-//              sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
-        anchors: ['firstPage', 'secondPage', '3rdPage', '4rdPage', '5rdPage', '6rdPage', '7rdPage', '8rdPage', '9rdPage', '10rdPage', '11rdPage'],
-        menu: '#vertical-nav',
-        scrollOverflow: true,
-        afterLoad: function (link, index) {
-          if (index == 3) {
-            $(".vertical-nav").css("transform", "translateX(0)");
-          } else if (index == 2) {
-            $(".vertical-nav").css("transform", "translateX(52px)");
-            $(".horizontal-nav").css("transform", "translateY(0)");
-          } else if (index == 1) {
-            $(".vertical-nav").css("transform", "translateX(52px)");
-            $(".horizontal-nav").css("transform", "translateY(-64px)");
-          }
-        },
-         scrollOverflowReset: true
-      });
 
-      $('.c-arrow-down').click(function(){
-        $.fn.fullpage.moveSectionDown();
-      });
-
-      function uploadFile(target) {
-        document.getElementById("file-name").innerHTML = target.files[0].name;
-      }
-    });
   </script>
 
 </head>

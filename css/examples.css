@@ -71,6 +71,8 @@ p{
 }
 .section{
 	text-align:center;
+  /*padding: 7vh 0;*/
+  /*overflow-y: scroll; */
 }
 
 .twitter-share-button{
@@ -200,4 +202,3 @@ p{
 	right:10px;
 	z-index: 999;
  }
-
