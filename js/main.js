@@ -22,26 +22,25 @@
 
 $(document).ready(function () {
   $('#fullpage').fullpage({
-    verticalCentered: false,
-    anchors: ['firstPage', 'secondPage', '3rdPage', '4rdPage', '5rdPage', '6rdPage', '7rdPage', '8rdPage', '9rdPage', '10rdPage', '11rdPage'],
-    menu: '#vertical-nav',
-    scrollOverflow: true,
-    afterLoad: function (link, index) {
-      if (index == 3) {
-        $(".vertical-nav").css("transform", "translateX(0)");
-      } else if (index == 2) {
-        $(".vertical-nav").css("transform", "translateX(52px)");
-        $(".horizontal-nav").css("transform", "translateY(0)");
-      } else if (index == 1) {
-        $(".vertical-nav").css("transform", "translateX(52px)");
-        $(".horizontal-nav").css("transform", "translateY(-64px)");
-      }
-    },
-    resetSliders: true,
+       verticalCentered: false,
+       anchors: ['firstPage', 'secondPage', '3rdPage', '4rdPage', '5rdPage', '6rdPage', '7rdPage', '8rdPage', '9rdPage', '10rdPage', '11rdPage'],
+       menu: '#vertical-nav',
+       scrollOverflow: true,
+       responsiveWidth: 900,
+       afterLoad: function (link, index) {
+         if (index == 2) {
+           $(".vertical-nav").css("transform", "translateX(0)");
+           $(".horizontal-nav").css("transform", "translateY(0)");
+         }else if (index == 1) {
+           $(".vertical-nav").css("transform", "translateX(52px)");
+           $(".horizontal-nav").css("transform", "translateY(-64px)");
+         }
+       },
+     resetSliders: true,
      scrollOverflowReset: true,
      paddingTop: "7vh",
      paddingBottom: "10vh"
-  });
+     });
 
   $('.c-arrow-down').click(function(){
     $.fn.fullpage.moveSectionDown();
@@ -51,3 +50,7 @@ $(document).ready(function () {
     document.getElementById("file-name").innerHTML = target.files[0].name;
   }
 });
+
+//words
+//http://jsfiddle.net/RokoCB/5nfay7d1/206/
+
