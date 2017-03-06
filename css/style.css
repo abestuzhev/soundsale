@@ -280,54 +280,6 @@ input[placeholder] {
 .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-handle {
   top: -2px; }
 
-.mejs__controls .mejs__time-rail .mejs__time-float {
-  position: absolute;
-  background: #0F7180;
-  width: 36px;
-  height: 17px;
-  top: -26px;
-  margin-left: -18px;
-  color: #111; }
-
-.mejs__controls .mejs__time-rail .mejs__time-float-corner {
-  position: absolute;
-  width: 0;
-  height: 0;
-  line-height: 0;
-  border: 5px solid #0F7180;
-  border-color: #0F7180 transparent transparent transparent;
-  border-radius: 0;
-  top: 17px;
-  left: 13px; }
-
-.mejs__controls .mejs__time-rail .mejs__time-float-current {
-  width: 30px;
-  display: block;
-  left: 2px;
-  top: 2px;
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 10px;
-  font-weight: bold;
-  color: #fff;
-  text-align: center; }
-
-.mejs__currenttime,
-.mejs__duration {
-  color: #0F7180;
-  font-family: "Open Sans", sans-serif;
-  font-size: 13px;
-  font-weight: 400; }
-
-.mejs__currenttime {
-  position: absolute;
-  bottom: 10px;
-  left: 55px; }
-
-.mejs__duration {
-  position: absolute;
-  bottom: 10px;
-  right: 17px; }
-
 .c-contact-info {
   font-family: "Open Sans", sans-serif;
   margin-bottom: 30px; }
