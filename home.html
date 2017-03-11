@@ -19,36 +19,60 @@
   <script type="text/javascript" src="js/scrolloverflow.js"></script>
   <script type="text/javascript" src="js/examples.js"></script>
   <script src="bower_components/mediaelement/build/mediaelement-and-player.min.js"></script>
+  <script src="bower_components/jquery-mask-plugin/dist/jquery.mask.js"></script>
   <!-- <script src="bower_components/sticky-kit/jquery.sticky-kit.min.js"></script> -->
   <script src="js/jquery.stickybox.js"></script>
   <script src="js/main.js"></script>
 
 
   <script type="text/javascript">
-//    $(document).ready(function () {
-//      $('#fullpage').fullpage({
-//        verticalCentered: false,
-//        anchors: ['firstPage', 'secondPage', '3rdPage', '4rdPage', '5rdPage', '6rdPage', '7rdPage', '8rdPage', '9rdPage', '10rdPage', '11rdPage'],
-//        menu: '#vertical-nav',
-//        scrollOverflow: true,
-//        responsiveWidth: 900,
-//        afterLoad: function (link, index) {
-//          if (index == 3) {
-//            $(".vertical-nav").css("transform", "translateX(0)");
-//          } else if (index == 2) {
-//            $(".vertical-nav").css("transform", "translateX(52px)");
-//            $(".horizontal-nav").css("transform", "translateY(0)");
-//          } else if (index == 1) {
-//            $(".vertical-nav").css("transform", "translateX(52px)");
-//            $(".horizontal-nav").css("transform", "translateY(-64px)");
-//          }
-//        }
-//      resetSliders: true,
-//      scrollOverflowReset: true,
-//      paddingTop: "7vh",
-//      paddingBottom: "10vh"
-//      });
-//    });
+    $(document).ready(function () {
+      $('#fullpage').fullpage({
+        verticalCentered: false,
+        anchors: ['firstPage', 'secondPage', '3rdPage', '4rdPage', '5rdPage', '6rdPage', '7rdPage', '8rdPage', '9rdPage', '10rdPage', '11rdPage'],
+        menu: '#vertical-nav',
+        scrollOverflow: true,
+        responsiveWidth: 900,
+        afterLoad: function (link, index) {
+          if (index == 3) {
+
+          } else if (index == 2) {
+            $(".vertical-nav").css("transform", "translateX(0)");
+            $(".horizontal-nav").css("transform", "translateY(0)");
+          } else if (index == 1) {
+            $(".vertical-nav").css("transform", "translateX(52px)");
+            $(".horizontal-nav").css("transform", "translateY(-64px)");
+          }
+        },
+      resetSliders: true,
+      scrollOverflowReset: true,
+      paddingTop: "7vh",
+      paddingBottom: "10vh"
+      });
+
+      $('.c-arrow-down').click(function(){
+        $.fn.fullpage.moveSectionDown();
+      });
+
+//      $(".accent-letter_input").mask("А");
+
+      $(".accent-letter_input").keypress(function() {
+        $(this).parent().next().find('.accent-letter_input').focus();
+
+      });
+
+//     
+      $('.accent-letter_input').mask('*', {'translation': {
+          "*": {pattern: /[^]/}
+//        Я: {pattern: /[А-Яа-я]/}
+        }
+      });
+
+
+
+
+
+    });
   </script>
 
 </head>
