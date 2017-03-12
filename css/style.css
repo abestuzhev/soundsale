@@ -769,6 +769,11 @@ input[placeholder] {
       top: 33%;
       background: url("../img/icon-entry.png") 0 0 no-repeat; }
 
+.section {
+  height: 100vh;
+  width: 100vw;
+  overflow-y: scroll; }
+
 .section-menu {
   background: url("../img/slide-bg-first.jpg") 0 0 no-repeat;
   background-size: cover; }
@@ -799,6 +804,8 @@ input[placeholder] {
 .section-chronometry {
   background: url("../img/slide-bg-chronometry.jpg") 0 0 no-repeat;
   background-size: cover; }
+  .section-chronometry .section_img img {
+    width: 90%; }
 
 .section-form-style {
   background: url("../img/form-style-bg.jpg") 0 0 no-repeat;
@@ -857,6 +864,8 @@ input[placeholder] {
   .section-accent .accent-letter_box {
     display: block;
     margin-bottom: 16px; }
+  .section-accent .accent-letter_list {
+    display: inline-block; }
   .section-accent .accent-letter_item {
     display: inline-block;
     text-align: center;
@@ -901,7 +910,15 @@ input[placeholder] {
     font-size: 50px;
     font-weight: 800;
     text-transform: uppercase; }
-  .section-accent .accent-letter_add {
+  .section-accent .accent-letter_add-letter {
+    display: inline-block;
+    width: 65px;
+    height: 65px;
+    border-radius: 65px;
+    vertical-align: top;
+    margin-top: 33px;
+    background-color: #31c5f0; }
+  .section-accent .accent-letter_add-word {
     display: inline-block;
     border-radius: 50px;
     color: #FFF;
@@ -1106,26 +1123,23 @@ input[placeholder] {
       font-weight: 400;
       text-shadow: 1px 1.7px 2px rgba(0, 0, 0, 0.14); }
 
-.slide-incidental .section_title {
-  font-size: 3.125em; }
-
-.slide-incidental .section_img {
-  position: absolute;
-  top: 226px;
-  right: 121px; }
-
-.slide-incidental .grid,
-.slide-incidental .grid_column {
-  text-align: left; }
-
-.slide-incidental .grid--full .grid_column {
-  width: 100%; }
-
-.slide-incidental .grid_column {
-  width: 30%; }
-
-.slide-incidental .grid_column:last-child {
-  width: 40%; }
+.slide-incidental {
+  position: relative; }
+  .slide-incidental .section_title {
+    font-size: 3.125em; }
+  .slide-incidental .section_img {
+    position: absolute;
+    top: 226px;
+    right: 121px; }
+  .slide-incidental .grid,
+  .slide-incidental .grid_column {
+    text-align: left; }
+  .slide-incidental .grid--full .grid_column {
+    width: 100%; }
+  .slide-incidental .grid_column {
+    width: 30%; }
+  .slide-incidental .grid_column:last-child {
+    width: 40%; }
 
 .output {
   padding: 0 137px 0 141px; }

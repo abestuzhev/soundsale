@@ -1,3 +1,9 @@
+.section {
+  height: 100vh;
+  width: 100vw;
+  overflow-y: scroll;
+}
+
 .section-menu {
   background: url($img-dir + 'slide-bg-first.jpg') 0 0 no-repeat;
   -webkit-background-size: cover;
@@ -46,6 +52,10 @@
   background: url($img-dir + 'slide-bg-chronometry.jpg') 0 0 no-repeat;
   -webkit-background-size: cover;
   background-size:  cover;
+
+  .section_img img {
+    width: 90%;
+  }
 }
 
 .section-form-style {
@@ -135,6 +145,10 @@
       margin-bottom: 16px;
     }
 
+    &_list {
+      display: inline-block;
+    }
+
     &_item {
       display: inline-block;
       text-align: center;
@@ -190,7 +204,17 @@
       text-transform: uppercase;
     }
 
-    &_add {
+    &_add-letter {
+      display: inline-block;
+      width: 65px;
+      height: 65px;
+      border-radius: 65px;
+      vertical-align: top;
+      margin-top: 33px;
+      background-color: #31c5f0;
+    }
+
+    &_add-word {
       display: inline-block;
       border-radius: 50px;
       color: #FFF;
@@ -481,7 +505,7 @@
 
 //slide-incidental
 .slide-incidental {
-  //position: relative;
+  position: relative;
 
   .section_title {
     font-size: 3.125em;
