@@ -1,54 +1,34 @@
-$(document).ready(function () {
-    // $('#pagepiling').pagepiling({
-     //    verticalCentered: false,
-     //    css3: false,
-     //    navigation: false,
-    	// anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
-    	// menu: '#myMenu',
-    	// scrollingSpeed: 500,
-    	// easing: 'swing'
-    // });
-    //
-    // $('.step-button').click(function () {
-    // $.fn.pagepiling.moveSectionDown();
-	// });
 
-    // $("#myMenu").hover(function() {
-    	// $("#container").toggleClass('menu-push-toright');
-    	// $("#myMenu").toggleClass('menu-open');
-	// });
-    var $accentTemplate = $(
-        '<div class="accent-letter_item">' +
-        '<input id="accent-letter_radio-1" type="radio" name="accent">' +
-        '<label for="accent-letter_radio-1" class="accent-letter_radio"></label>' +
-        '<input type="text" class="accent-letter_input">' +
-        '</div>'
-    );
-
-    $(".accent-letter_add-letter").click(function(e){
-        e.preventDefault();
-        var listLenght= $('.accent-letter_list').length();
-        var $accentTemplate;
-        for(var i=5; i <= listLenght; i++) {
-            $accentTemplate = $(
-                '<div class="accent-letter_item">' +
-                '<input id="accent-letter_radio- + i" type="radio" name="accent">' +
-                '<label for="accent-letter_radio- + i" class="accent-letter_radio"></label>' +
-                '<input type="text" class="accent-letter_input">' +
-                '</div>'
-            );
-        };
-
-        console.log($accentTemplate);
-        $('.accent-letter_list').append($accentTemplate);
-    });
-
-
-
-
-});
 
 $(document).ready(function () {
+
+  var $accentTemplate = $(
+         '<div class="accent-letter_item">' +
+         '<input id="accent-letter_radio-1" type="radio" name="accent">' +
+         '<label for="accent-letter_radio-1" class="accent-letter_radio"></label>' +
+         '<input type="text" class="accent-letter_input">' +
+         '</div>'
+     );
+
+     $(".accent-letter_add-letter").click(function(e){
+         e.preventDefault();
+        //  var listLenght= $('.accent-letter_list').length();
+        //  var $accentTemplate;
+        //  for(var i=5; i <= listLenght; i++) {
+        //      $accentTemplate = $(
+        //          '<div class="accent-letter_item">' +
+        //          '<input id="accent-letter_radio- + i" type="radio" name="accent">' +
+        //          '<label for="accent-letter_radio- + i" class="accent-letter_radio"></label>' +
+        //          '<input type="text" class="accent-letter_input">' +
+        //          '</div>'
+        //      );
+        //  };
+
+         console.log($accentTemplate);
+         $('.accent-letter_list').append($accentTemplate);
+     });
+
+
     $('#fullpage').fullpage({
         verticalCentered: true,
         anchors: ['firstPage', 'secondPage', '3rdPage', '4rdPage', '5rdPage', '6rdPage', '7rdPage', '8rdPage', '9rdPage', '10rdPage', '11rdPage'],
@@ -100,5 +80,6 @@ $(document).ready(function () {
     //         $.fn.fullpage.destroy('all');
     //     }
     // });
+
 
 });
